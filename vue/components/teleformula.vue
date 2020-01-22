@@ -1,0 +1,117 @@
+<template>
+    <div>
+        <!--<h1 class="text-center">Teleformula</h1>-->
+    <div class="container">
+        <div v-if="!programacionactual.programa" class="row">
+            <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"  class="rounded mx-auto d-block img-fluid">
+        </div>
+        <div v-else class="row">
+            <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
+        </div>
+        <!--<div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;"><iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" src="https://webinar.tecnoxia.com/hlsplayer/AM1470.html" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe></div>-->    
+        </div>
+        <div class="container">
+            <div class="row"> 
+                <div  v-if="!programacionactual.programa" class="col-12">
+                    <table  class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                        <td scope="col">Descripción del programas</td>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td></td>
+                        </tr>
+                        </tbody> 
+                    </table>
+                </div>
+                <div  v-else class="col-12">
+                    <table  class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                        <th scope="col">Descripción del programa {{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr >
+                        <td>{{programacionactual.programa.description}}</td>
+                        </tr>
+                        </tbody> 
+                    </table>
+                </div>
+            </div>
+    </div>
+        <!--<div  class="card text-center">
+            <div class="card-header">
+            Descripción Del Programa
+            </div>
+            <div v-if="!programacionactual.programa"  class="card-body">
+                  <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+            <div v-else  class="card-body">
+                <h5  class="card-title">{{programacionactual.programa.name_driver}} </h5>
+                <p class="card-text">{{programacionactual.programa.description}}</p>
+            </div> 
+        </div>-->
+    <div class="container">
+        <div class="entry row">
+            <div class="col-12">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Programa</th>
+                    <th scope="col">Conductor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="programacion in programacion" :key="programacion.pivot.id">
+                    <th>{{programacion.pivot.time_start }}-{{programacion.pivot.time_end}}</th>
+                    <td>{{programacion.name}}</td>
+                    <td>{{programacion.name_driver}}</td>
+                    </tr>
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+    <!--{{programacion}}
+{{programacionactual}}-->
+    </div>
+    </div>
+</template>
+
+<script>
+import axios from 'axios'
+export default {
+    data(){
+        return{
+            estacion:[],
+            programacion:[],
+            programacionactual:[],
+            loading:true,       
+        }
+    },
+    mounted(){
+        this.getProgramacion()
+        this.getProgramacionActual();
+
+    },
+    methods: {
+        async getProgramacion(){
+            let url= '/programacion-estacion/3'
+            const res= await axios.get(url)
+            this.programacion= res.data.programacion
+        },
+            async getProgramacionActual(){
+            let url= '/programacion-estacion-actual/3'
+            const res= await axios.get(url)
+            this.programacionactual= res.data.programacion
+            this.loading = false;
+
+
+        }
+    },
+}
+</script>
