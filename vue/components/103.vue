@@ -70,7 +70,7 @@
                     </thead>
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <th>{{programacion.pivot.time_start }}-{{programacion.pivot.time_end}}</th>
+                    <th>{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</th>
                     <td>{{programacion.name}}</td>
                     <td>{{programacion.name_driver}}</td>
                     </tr>
@@ -86,6 +86,8 @@
 
 <script>
 import axios from 'axios'
+import moment from 'moment'
+
 export default {
     data(){
         return{
@@ -106,6 +108,7 @@ export default {
             let url= '/programacion-estacion/1'
             const res= await axios.get(url)
             this.programacion= res.data.programacion
+
             this.estacion= res.data.estacion
 
         },
@@ -116,7 +119,20 @@ export default {
 
 
 
-        }
-    },
+        },
+        moment: function (date) {
+            return moment(date);
+        },
+        date: function (date) {
+            return moment(date).format('h:mm:ss a');
+     }
+   },
+   // cortamos la hora  a h:mm co  la function formattime
+    filters: {
+    formatime: function (date) {
+        let hora_format = date.split(":");
+        return hora_format[0] + ':'  + hora_format[1];
+    }
+  }
 }
 </script>

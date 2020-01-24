@@ -12,26 +12,14 @@
             <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
         </div>    
         </div>
-       <!-- <div  class="card text-center">
-            <div class="card-header">
-            Descripción Del Programa
-            </div>
-            <div v-if="!programacionactual.programa"  class="card-body">
-                  <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-            </div>
-            <div v-else  class="card-body">
-                <h5  class="card-title">{{programacionactual.programa.name_driver}} </h5>
-                <p class="card-text">{{programacionactual.programa.description}}</p>
-            </div> 
-        </div>-->
-    <div class="container">
+            <div class="container">
         <div class="row"> 
             <div  v-if="!programacionactual.programa" class="col-12">
                 <table  class="table">
                     <thead class="thead-dark">
-                    <tr>
-                    <td scope="col">Descripción del programas</td>
+                    <tr>   
+
+                    <th scope="col">Descripción del programa</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -56,8 +44,41 @@
                 </table>
             </div>
         </div>
-
-
+    </div>
+       <!-- <div  class="card text-center">
+            <div class="card-header">
+            Descripción Del Programa
+            </div>
+            <div v-if="!programacionactual.programa"  class="card-body">
+                  <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+            <div v-else  class="card-body">
+                <h5  class="card-title">{{programacionactual.programa.name_driver}} </h5>
+                <p class="card-text">{{programacionactual.programa.description}}</p>
+            </div> 
+        </div>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Programa</th>
+                    <th scope="col">Conductor</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="programacion in programacion" :key="programacion.pivot.id">
+                    <th>{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</th>
+                    <td>{{programacion.name}}</td>
+                    <td>{{programacion.name_driver}}</td>
+                    </tr>
+                    </tbody> 
+                </table>
+            </div>
+        </div>
     </div>
 <!--{{programacion}}
 {{programacionactual}}-->
@@ -98,5 +119,12 @@ export default {
 
         }
     },
+// cortamos la hora  a h:mm co  la function formattime
+    filters: {
+    formatime: function (date) {
+        let hora_format = date.split(":");
+        return hora_format[0] + ':'  + hora_format[1];
+    }
+  }
 }
 </script>

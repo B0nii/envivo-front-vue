@@ -1,5 +1,4 @@
 const Vue = require('vue');
-
 Vue.config.productionTip = false
 
 import axios from 'axios'

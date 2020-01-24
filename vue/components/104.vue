@@ -20,7 +20,7 @@
                     <thead class="thead-dark">
                     <tr>   
 
-                    <th scope="col">Descripción del programasss</th>
+                    <th scope="col">Descripción del programa</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -72,7 +72,7 @@
                     </thead>
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <th>{{programacion.pivot.time_start }}-{{programacion.pivot.time_end}}</th>
+                    <th>{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</th>
                     <td>{{programacion.name}}</td>
                     <td>{{programacion.name_driver}}</td>
                     </tr>
@@ -121,5 +121,12 @@ export default {
         }
 
     },
+    // cortamos la hora  a h:mm co  la function formattime
+    filters: {
+    formatime: function (date) {
+        let hora_format = date.split(":");
+        return hora_format[0] + ':'  + hora_format[1];
+    }
+  }
 }
 </script>
