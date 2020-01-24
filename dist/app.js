@@ -36082,6 +36082,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_1500__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/1500 */ "./vue/components/1500.vue");
 /* harmony import */ var _components_teleformula__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/teleformula */ "./vue/components/teleformula.vue");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/slider */ "./vue/components/slider.vue");
+/* harmony import */ var _components_LaMa_anera__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/LaMañanera */ "./vue/components/LaMañanera.vue");
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
@@ -36089,6 +36090,7 @@ Vue.config.productionTip = false;
 
 axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+
 
 
 
@@ -36106,6 +36108,7 @@ Vue.component('estacion-1470', _components_1470__WEBPACK_IMPORTED_MODULE_5__["de
 Vue.component('estacion-1500', _components_1500__WEBPACK_IMPORTED_MODULE_6__["default"]);
 Vue.component('teleformula', _components_teleformula__WEBPACK_IMPORTED_MODULE_7__["default"]);
 Vue.component('slider', _components_slider__WEBPACK_IMPORTED_MODULE_8__["default"]);
+Vue.component('la-mañanera', _components_LaMa_anera__WEBPACK_IMPORTED_MODULE_9__["default"]);
 var vm = new Vue({
   el: '#app',
   data: {},
@@ -36460,6 +36463,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./vue/components/LaMañanera.vue":
+/*!***************************************!*\
+  !*** ./vue/components/LaMañanera.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_0__["default"])(
+  script,
+  render,
+  staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+component.options.__file = "vue/components/LaMañanera.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
 /***/ "./vue/components/helow.vue":
 /*!**********************************!*\
   !*** ./vue/components/helow.vue ***!
@@ -36658,7 +36693,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
 
 
 /***/ })
