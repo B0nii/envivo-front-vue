@@ -2978,7 +2978,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                url = '/programacion-estacion/7';
+                url = '/programacion-estacion/9';
                 _context.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3010,7 +3010,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                url = '/programacion-estacion-actual/7';
+                url = '/programacion-estacion-actual/9';
                 _context2.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3628,7 +3628,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context13.prev = _context13.next) {
               case 0:
-                url = '/programacion-estacion/7';
+                url = '/programacion-estacion/9';
                 _context13.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3659,7 +3659,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context14.prev = _context14.next) {
               case 0:
-                url = '/programacion-estacion-actual/7';
+                url = '/programacion-estacion-actual/9';
                 _context14.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -36657,9 +36657,9 @@ var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"
 
 Vue.config.productionTip = false;
  //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+// axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; // axios.defaults.baseURL = 'http://localhost:8000/api/'
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api/'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 

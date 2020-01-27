@@ -10,6 +10,8 @@
     <div class="slide tie-audio">
     <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
+            &nbsp;
+
     </div>
     <div v-else class="slide-img"><a title="103.3. FM" href="https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid"></a>
@@ -281,13 +283,13 @@ export default {
 
         },
         async getProgramacionMananera(){
-            let url= '/programacion-estacion/7'
+            let url= '/programacion-estacion/9'
             const res= await axios.get(url)
             this.estacionmananera= res.data.estacion
 
         },
         async getProgramacionActualMananera(){
-            let url= '/programacion-estacion-actual/7'
+            let url= '/programacion-estacion-actual/9'
             const res= await axios.get(url)
             this.programacionactualmananera= res.data.programacion
 

@@ -100,7 +100,7 @@ export default {
     },
     methods: {
     async getProgramacion(){
-        let url = '/programacion-estacion/7'
+        let url = '/programacion-estacion/9'
         const res= await axios.get(url)
         this.programacion = res.data.programacion
         this.estacion = res.data.estacion
@@ -108,7 +108,7 @@ export default {
 
     },
     async getProgramacionActual(){
-            let url= '/programacion-estacion-actual/7'
+            let url= '/programacion-estacion-actual/9'
             const res= await axios.get(url)
             this.programacionactual= res.data.programacion
     },
