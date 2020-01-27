@@ -2,15 +2,15 @@
     <div>
        <!--<h3 class="text-center">{{estacion.name}}</h3>-->
     <div class="container">
+        <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
+            <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
+        </div> 
          <div v-if="!programacionactual.programa" class="row">
             <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div v-else class="row">
             <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
-        </div>
-            <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
-                <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
-            </div>    
+        </div>  
     </div>
         <!--<div  class="card text-center">
             <div class="card-header">
@@ -28,10 +28,13 @@
     <div class="container">
         <div class="row"> 
             <div  v-if="!programacionactual.programa" class="col-12">
+            <div class="mag-box-title the-global-title">
+			<h3>Horarios de Programas</h3>
+			</div>
                 <table  class="table">
                     <thead class="thead-dark">
                     <tr>
-                    <td scope="col">Descripción del programas</td>
+                    <td scope="col"></td>
                     </tr>
                     </thead>
                     <tbody>
@@ -45,7 +48,7 @@
                 <table  class="table">
                     <thead class="thead-dark">
                     <tr>
-                    <th scope="col">Descripción del programa {{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
+                    <th scope="col">{{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
                     </tr>
                     </thead>
                     <tbody>

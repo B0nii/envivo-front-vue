@@ -1970,6 +1970,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2085,6 +2088,9 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
 //
 //
 //
@@ -2369,6 +2375,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2479,6 +2488,9 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
 //
 //
 //
@@ -2760,6 +2772,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2870,16 +2885,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3420,6 +3425,9 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
+//
 //
 //
 //
@@ -22421,23 +22429,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: { src: _vm.programacionactual.programa.image_full }
-            })
-          ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -22466,21 +22457,41 @@ var render = function() {
             }
           })
         ]
-      )
+      ),
+      _vm._v(" "),
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: { src: _vm.programacionactual.programa.image_full }
+            })
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -22506,7 +22517,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -22540,13 +22551,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("th", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programas")
-          ])
-        ])
+        _c("tr", [_c("th", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
@@ -22590,23 +22605,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: { src: _vm.programacionactual.programa.image_full }
-            })
-          ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -22635,21 +22633,41 @@ var render = function() {
             }
           })
         ]
-      )
+      ),
+      _vm._v(" "),
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: { src: _vm.programacionactual.programa.image_full }
+            })
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -22675,7 +22693,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -22709,13 +22727,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("th", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programa")
-          ])
-        ])
+        _c("tr", [_c("th", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
@@ -22759,23 +22781,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: { src: _vm.programacionactual.programa.image_full }
-            })
-          ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -22804,21 +22809,41 @@ var render = function() {
             }
           })
         ]
-      )
+      ),
+      _vm._v(" "),
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: { src: _vm.programacionactual.programa.image_full }
+            })
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -22844,7 +22869,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -22878,13 +22903,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("td", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programas")
-          ])
-        ])
+        _c("tr", [_c("td", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
@@ -22928,23 +22957,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: { src: _vm.programacionactual.programa.image_full }
-            })
-          ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -22973,21 +22985,41 @@ var render = function() {
             }
           })
         ]
-      )
+      ),
+      _vm._v(" "),
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: { src: _vm.programacionactual.programa.image_full }
+            })
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -23013,7 +23045,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -23047,13 +23079,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("td", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programas")
-          ])
-        ])
+        _c("tr", [_c("td", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
@@ -23097,26 +23133,6 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "container" }, [
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src: _vm.programacionactual.programa.image_full,
-                alt: "..."
-              }
-            })
-          ]),
-      _vm._v(" "),
       _c(
         "div",
         {
@@ -23145,21 +23161,44 @@ var render = function() {
             }
           })
         ]
-      )
+      ),
+      _vm._v(" "),
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src: _vm.programacionactual.programa.image_full,
+                alt: "..."
+              }
+            })
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -23185,7 +23224,7 @@ var render = function() {
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -23219,13 +23258,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("th", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programa")
-          ])
-        ])
+        _c("tr", [_c("th", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
@@ -23325,7 +23368,7 @@ var render = function() {
                       attrs: {
                         title: "103.3. FM",
                         href:
-                          "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23345,10 +23388,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual104.programa
-              ? _c("div", { staticClass: "slide-img" }, [
-                  _vm._m(3),
-                  _vm._v("\n \n")
-                ])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(3)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23356,7 +23396,7 @@ var render = function() {
                       attrs: {
                         title: "104.1 FM",
                         href:
-                          "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23368,8 +23408,7 @@ var render = function() {
                         }
                       })
                     ]
-                  ),
-                  _vm._v("\n \n")
+                  )
                 ]),
             _vm._v(" "),
             _vm._m(4)
@@ -23377,10 +23416,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactualTeleformula.programa
-              ? _c("div", { staticClass: "slide-img" }, [
-                  _vm._m(5),
-                  _vm._v("\n \n")
-                ])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(5)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23388,7 +23424,7 @@ var render = function() {
                       attrs: {
                         title: "Telefórmula",
                         href:
-                          "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                          "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                       }
                     },
                     [
@@ -23401,8 +23437,7 @@ var render = function() {
                         }
                       })
                     ]
-                  ),
-                  _vm._v("\n \n")
+                  )
                 ]),
             _vm._v(" "),
             _vm._m(6)
@@ -23410,10 +23445,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual970.programa
-              ? _c("div", { staticClass: "slide-img" }, [
-                  _vm._m(7),
-                  _vm._v("\n \n")
-                ])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(7)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23421,7 +23453,7 @@ var render = function() {
                       attrs: {
                         title: "970 AM",
                         href:
-                          "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23433,8 +23465,7 @@ var render = function() {
                         }
                       })
                     ]
-                  ),
-                  _vm._v("\n \n")
+                  )
                 ]),
             _vm._v(" "),
             _vm._m(8)
@@ -23442,10 +23473,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual1470.programa
-              ? _c("div", { staticClass: "slide-img" }, [
-                  _vm._m(9),
-                  _vm._v("\n \n")
-                ])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(9)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23453,7 +23481,7 @@ var render = function() {
                       attrs: {
                         title: "1470 AM",
                         href:
-                          "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                          "https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula/"
                       }
                     },
                     [
@@ -23465,8 +23493,7 @@ var render = function() {
                         }
                       })
                     ]
-                  ),
-                  _vm._v("\n \n")
+                  )
                 ]),
             _vm._v(" "),
             _vm._m(10)
@@ -23474,10 +23501,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual1500.programa
-              ? _c("div", { staticClass: "slide-img" }, [
-                  _vm._m(11),
-                  _vm._v("\n \n")
-                ])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(11)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23485,7 +23509,7 @@ var render = function() {
                       attrs: {
                         title: "1500 AM",
                         href:
-                          "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+                          "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/"
                       }
                     },
                     [
@@ -23497,8 +23521,7 @@ var render = function() {
                         }
                       })
                     ]
-                  ),
-                  _vm._v("\n \n")
+                  )
                 ]),
             _vm._v(" "),
             _vm._m(12)
@@ -23527,7 +23550,7 @@ var staticRenderFns = [
         attrs: {
           title: "103.3. FM",
           href:
-            "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23553,7 +23576,7 @@ var staticRenderFns = [
             attrs: {
               title: "103.3. FM",
               href:
-                "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("103.3 FM")]
@@ -23571,7 +23594,7 @@ var staticRenderFns = [
         attrs: {
           title: "104.1 FM",
           href:
-            "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23597,7 +23620,7 @@ var staticRenderFns = [
             attrs: {
               title: "104.1 FM",
               href:
-                "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("104.1 FM")]
@@ -23615,7 +23638,7 @@ var staticRenderFns = [
         attrs: {
           title: "Telefórmula",
           href:
-            "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+            "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
         }
       },
       [
@@ -23641,7 +23664,7 @@ var staticRenderFns = [
             attrs: {
               title: "Telefórmula",
               href:
-                "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
             }
           },
           [_vm._v("Telefórmula")]
@@ -23659,7 +23682,7 @@ var staticRenderFns = [
         attrs: {
           title: "970 AM",
           href:
-            "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23685,7 +23708,7 @@ var staticRenderFns = [
             attrs: {
               title: "970 AM",
               href:
-                "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("970 AM")]
@@ -23703,7 +23726,7 @@ var staticRenderFns = [
         attrs: {
           title: "1470 AM",
           href:
-            "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+            "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
         }
       },
       [
@@ -23729,7 +23752,7 @@ var staticRenderFns = [
             attrs: {
               title: "1470 AM",
               href:
-                "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("1470 AM")]
@@ -23747,7 +23770,7 @@ var staticRenderFns = [
         attrs: {
           title: "1500 AM",
           href:
-            "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23773,7 +23796,7 @@ var staticRenderFns = [
             attrs: {
               title: "1500 AM",
               href:
-                "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+                "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/"
             }
           },
           [_vm._v("1500 AM")]
@@ -23826,15 +23849,18 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          ? _c("div", { staticClass: "col-12" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _vm._m(1)
+            ])
           : _c("div", { staticClass: "col-12" }, [
               _c("table", { staticClass: "table" }, [
                 _c("thead", { staticClass: "thead-dark" }, [
                   _c("tr", [
                     _c("th", { attrs: { scope: "col" } }, [
                       _vm._v(
-                        "Descripción del programa " +
-                          _vm._s(_vm.programacionactual.programa.name) +
+                        _vm._s(_vm.programacionactual.programa.name) +
                           " - " +
                           _vm._s(_vm.programacionactual.programa.name_driver)
                       )
@@ -23860,7 +23886,7 @@ var render = function() {
       _c("div", { staticClass: "entry row" }, [
         _c("div", { staticClass: "col-12" }, [
           _c("table", { staticClass: "table table-bordered" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" "),
             _c(
               "tbody",
@@ -23894,13 +23920,17 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
+      _c("h3", [_vm._v("Horarios de Programas")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
     return _c("table", { staticClass: "table" }, [
       _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [
-          _c("td", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programas")
-          ])
-        ])
+        _c("tr", [_c("td", { attrs: { scope: "col" } })])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])

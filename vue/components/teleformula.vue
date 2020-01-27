@@ -13,10 +13,13 @@
         <div class="container">
             <div class="row"> 
                 <div  v-if="!programacionactual.programa" class="col-12">
+                <div class="mag-box-title the-global-title">
+			        <h3>Horarios de Programas</h3>
+			    </div>
                     <table  class="table">
                         <thead class="thead-dark">
                         <tr>
-                        <td scope="col">Descripción del programas</td>
+                        <td scope="col"></td>
                         </tr>
                         </thead>
                         <tbody>
@@ -30,7 +33,7 @@
                     <table  class="table">
                         <thead class="thead-dark">
                         <tr>
-                        <th scope="col">Descripción del programa {{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
+                        <th scope="col">{{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
                         </tr>
                         </thead>
                         <tbody>
