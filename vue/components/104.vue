@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!--<h1 class="text-center">{{estacion.name}}</h1>-->
+        <h1 class="text-center">{{estacion.name}}</h1>
     <div class="container">
         
         <div v-if="!programacionactual.programa" class="row">

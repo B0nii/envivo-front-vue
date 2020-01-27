@@ -1,12 +1,12 @@
 <template>
     <div>
-        <!--<h1 class="text-center">Teleformula</h1>-->
+        <h1 class="text-center">Teleformula</h1>
     <div class="container">
         <div v-if="!programacionactual.programa" class="row">
             <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div v-else class="row">
-            <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
+             <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
         </div>
         <!--<div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;"><iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" src="https://webinar.tecnoxia.com/hlsplayer/AM1470.html" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe></div>-->    
         </div>

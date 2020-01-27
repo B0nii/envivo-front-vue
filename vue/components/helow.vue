@@ -7,6 +7,7 @@
         <estacion-1470/>
         <estacion-1500/>
         <teleformula/>
+        <la-mananera/>
 
     </div>   
 </template>

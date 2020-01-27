@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!--<h1 class="text-center">{{estacion.name}}</h1>-->
+        <h1 class="text-center">{{estacion.name}}</h1>
         <div  class="container">
          <div v-if="!programacionactual.programa" class="row">
             <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"  class="rounded mx-auto d-block img-fluid">
