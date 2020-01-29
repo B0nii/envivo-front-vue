@@ -77,7 +77,7 @@
                     <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
                     <td>{{programacion.name}}</td>
                     <td>{{programacion.name_driver}}</td>
-                    </tr>
+                    </tr> 
                     </tbody> 
                 </table>
             </div>

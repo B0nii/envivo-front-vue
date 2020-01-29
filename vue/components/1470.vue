@@ -15,7 +15,7 @@
         <!--<div  class="card text-center">
             <div class="card-header">
             Descripción Del Programa
-            </div>
+            </div> 
             <div v-if="!programacionactual.programa"  class="card-body">
                   <h5 class="card-title"></h5>
                 <p class="card-text"></p>

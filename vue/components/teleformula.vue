@@ -67,8 +67,7 @@
                     <th scope="col">Hora</th>
                     <th scope="col">Programa</th>
                     <th scope="col">Conductor</th>
-                    </tr>
-                    </thead>
+                    </tr>  
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
                     <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>

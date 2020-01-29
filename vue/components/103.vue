@@ -46,7 +46,7 @@
             </div>
             <div  v-else class="col-12">
                 <table  class="table">
-                    <thead class="thead-dark">
+                    <thead class="thead-dark"> 
                     <tr>
                     <th scope="col">{{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
                     </tr>
@@ -70,7 +70,7 @@
                     <th scope="col">Programa</th>
                     <th scope="col">Conductor</th>
                     </tr>
-                    </thead>
+                    </thead> 
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
                     <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
