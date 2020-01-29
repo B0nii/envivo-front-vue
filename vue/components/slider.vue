@@ -8,57 +8,56 @@
     </div>
     <div class="scrolling-slider scrolling-box-slider">
     <div class="slide tie-audio">
-    <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula">
+    <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
-    <div v-else class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula">
+    <div v-else class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="103.3. FM" href="https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula">103.3 FM</a></h3>
+    <h3 class="post-title"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">103.3 FM</a></h3>
     </div>
     </div>
     <div  class="slide tie-audio">
     <div v-if="!programacionactual104.programa" class="slide-img">
-        <a title="104.1 FM" href="https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula">
+        <a title="104.1 FM" href="https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div v-else class="slide-img">
-        <a title="104.1 FM" href="https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula">
+        <a title="104.1 FM" href="https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual104.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="104.1 FM" href="https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula">104.1 FM</a></h3>
+    <h3 class="post-title"><a title="104.1 FM" href="https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula">104.1 FM</a></h3>
     </div>
     </div>
     <div class="slide tie-audio">
     <div v-if="!programacionactualTeleformula.programa"  class="slide-img">
-    <a title="Telefórmula" href="https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula">
+    <a title="Telefórmula" href="https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div v-else class="slide-img">
-    <a title="Telefórmula" href="https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula">
+    <a title="Telefórmula" href="https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula">
             <img :src="programacionactualTeleformula.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="Telefórmula" href="https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula">Telefórmula</a></h3>
+    <h3 class="post-title"><a title="Telefórmula" href="https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula">Telefórmula</a></h3>
     </div>
     </div>
-
     <div class="slide tie-audio">
     <div v-if="!programacionactual970.programa" class="slide-img">
-    <a title="970 AM" href="https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula">
+    <a title="970 AM" href="https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div v-else class="slide-img">
-    <a title="970 AM" href="https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula">
+    <a title="970 AM" href="https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual970.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="970 AM" href="https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula">970 AM</a></h3>
+    <h3 class="post-title"><a title="970 AM" href="https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula">970 AM</a></h3>
     </div>
     </div>
     <div class="slide tie-audio">
@@ -67,45 +66,31 @@
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div v-else class="slide-img">
-    <a title="1470 AM" href="https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula/">
+    <a title="1470 AM" href="https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/">
         <img :src="programacionactual1470.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="1470 AM" href="https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula">1470 AM</a></h3>
+    <h3 class="post-title"><a title="1470 AM" href="https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula">1470 AM</a></h3>
     </div>
     </div>
     <div class="slide tie-audio">
     <div v-if="!programacionactual1500.programa"  class="slide-img">
-    <a title="1500 AM" href="https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula">
+    <a title="1500 AM" href="https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div v-else class="slide-img">
-    <a title="1500 AM" href="https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/">
+    <a title="1500 AM" href="https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/">
         <img :src="programacionactual1500.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="1500 AM" href="https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/">1500 AM</a></h3>
+    <h3 class="post-title"><a title="1500 AM" href="https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/">1500 AM</a></h3>
     </div>
     </div>
     </div>
     </div>
     </div>
-       <!-- {{"103"}}{{programacionactual103}}
-        {{"----------------------------------------"}}
-        {{"104"}}{{programacionactual104}}
-        {{"----------------------------------------"}}
-        {{"1500"}}{{programacionactual1500}}
-        {{"----------------------------------------"}}
-        {{"970"}}{{programacionactual970}}
-        {{"----------------------------------------"}}
-        {{"1470"}}{{programacionactual1470}}
-        {{"----------------------------------------"}}
-        {{"teleformula"}}{{programacionactualTeleformula}}
-        {{"----------------------------------------"}}-->
-
-
     </div>
 
 </template>

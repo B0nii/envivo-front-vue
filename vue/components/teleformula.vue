@@ -71,7 +71,7 @@
                     </thead>
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <th>{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</th>
+                    <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
                     <td>{{programacion.name}}</td>
                     <td>{{programacion.name_driver}}</td>
                     </tr>

@@ -2982,21 +2982,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -22523,7 +22508,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -22699,7 +22684,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -22875,7 +22860,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -23051,7 +23036,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -23230,7 +23215,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -23368,7 +23353,7 @@ var render = function() {
                       attrs: {
                         title: "103.3. FM",
                         href:
-                          "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23396,7 +23381,7 @@ var render = function() {
                       attrs: {
                         title: "104.1 FM",
                         href:
-                          "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23424,7 +23409,7 @@ var render = function() {
                       attrs: {
                         title: "Telefórmula",
                         href:
-                          "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                          "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                       }
                     },
                     [
@@ -23453,7 +23438,7 @@ var render = function() {
                       attrs: {
                         title: "970 AM",
                         href:
-                          "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
+                          "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                       }
                     },
                     [
@@ -23481,7 +23466,7 @@ var render = function() {
                       attrs: {
                         title: "1470 AM",
                         href:
-                          "https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula/"
+                          "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                       }
                     },
                     [
@@ -23509,7 +23494,7 @@ var render = function() {
                       attrs: {
                         title: "1500 AM",
                         href:
-                          "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/"
+                          "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
                       }
                     },
                     [
@@ -23550,7 +23535,7 @@ var staticRenderFns = [
         attrs: {
           title: "103.3. FM",
           href:
-            "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23576,7 +23561,7 @@ var staticRenderFns = [
             attrs: {
               title: "103.3. FM",
               href:
-                "https://www.radioformula.com.mx//103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("103.3 FM")]
@@ -23594,7 +23579,7 @@ var staticRenderFns = [
         attrs: {
           title: "104.1 FM",
           href:
-            "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23620,7 +23605,7 @@ var staticRenderFns = [
             attrs: {
               title: "104.1 FM",
               href:
-                "https://www.radioformula.com.mx//104-fm-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("104.1 FM")]
@@ -23638,7 +23623,7 @@ var staticRenderFns = [
         attrs: {
           title: "Telefórmula",
           href:
-            "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+            "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
         }
       },
       [
@@ -23664,7 +23649,7 @@ var staticRenderFns = [
             attrs: {
               title: "Telefórmula",
               href:
-                "https://www.radioformula.com.mx//teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
             }
           },
           [_vm._v("Telefórmula")]
@@ -23682,7 +23667,7 @@ var staticRenderFns = [
         attrs: {
           title: "970 AM",
           href:
-            "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23708,7 +23693,7 @@ var staticRenderFns = [
             attrs: {
               title: "970 AM",
               href:
-                "https://www.radioformula.com.mx//970-am-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("970 AM")]
@@ -23752,7 +23737,7 @@ var staticRenderFns = [
             attrs: {
               title: "1470 AM",
               href:
-                "https://www.radioformula.com.mx//1470-am-programacion-estacion-de-radio-grupo-formula"
+                "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula"
             }
           },
           [_vm._v("1470 AM")]
@@ -23770,7 +23755,7 @@ var staticRenderFns = [
         attrs: {
           title: "1500 AM",
           href:
-            "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula"
+            "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
         }
       },
       [
@@ -23796,7 +23781,7 @@ var staticRenderFns = [
             attrs: {
               title: "1500 AM",
               href:
-                "https://www.radioformula.com.mx//1500-am-programacion-estacion-de-radio-grupo-formula/"
+                "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
             }
           },
           [_vm._v("1500 AM")]
@@ -23892,7 +23877,7 @@ var render = function() {
               "tbody",
               _vm._l(_vm.programacion, function(programacion) {
                 return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
+                  _c("td", { staticStyle: { width: "100px" } }, [
                     _vm._v(
                       _vm._s(
                         _vm._f("formatime")(programacion.pivot.time_start)
@@ -36115,9 +36100,9 @@ __webpack_require__.r(__webpack_exports__);
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
- //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
