@@ -1,6 +1,6 @@
 <template>
     <div>
-        <!--<h1 class="text-center">{{estacion.name}}</h1>-->
+        <h1 class="text-center">{{estacion.name}}</h1>
     <div class="container">
         <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
             <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>

@@ -10,6 +10,8 @@
     <div class="slide tie-audio">
     <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"  class="rounded mx-auto d-block img-fluid"></a>
+            &nbsp;
+
     </div>
     <div v-else class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid"></a>
@@ -85,9 +87,31 @@
     </a>
     </div>
     <div class="slide-content">
+<<<<<<< HEAD
     <h3 class="post-title"><a title="1500 AM" href="https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/">1500 AM</a></h3>
+=======
+    <h3 class="post-title"><a title="1500 AM" href="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg">1500 AM</a></h3>
+>>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
     </div>
     </div>
+    <!-- <div v-for="programacion in programacion" :key="programacion.pivot.id"> -->
+    <!-- <div class="slide tie-audio" v-if="programacion.pivot.time_start >= moment() && programacion.pivot.time_end <= moment()" > -->
+    <div v-if="!programacionactualmananera.programa"  class="slide-img">
+    <a title="LaMañanera" href="https://testmarket.radioformula.com.mx/la-mananera/">
+        <img src="https://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Man%CC%83anera01.jpg"  class="rounded mx-auto d-block img-fluid"></a>
+    &nbsp;
+    </div>
+    <div v-else class="slide-img">
+    <a title="LaMañanera" href="https://testmarket.radioformula.com.mx/la-mananera/">
+        <img :src="programacionactualmananera.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
+    </a>
+    &nbsp;
+    </div>
+    <div class="slide-content" >
+    <h3 class="post-title"><a title="LaMañanera" href="https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/">La Mañanera</a></h3>
+    </div>
+    <!-- </div>
+    </div> -->
     </div>
     </div>
     </div>
@@ -96,7 +120,8 @@
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+import moment from 'moment';
 export default {
     data(){
         return{
@@ -121,6 +146,11 @@ export default {
             estacion1500:[],
             programacionactual1500:[],
 
+            estacionmananera:[],
+            programacionactualmananera:[],
+// estacion:[],
+//             programacion:[],
+//             programacionactual:[],
 
         }
     },
@@ -143,8 +173,14 @@ export default {
         this.getProgramacion1500();
         this.getProgramacionActual1500();
 
+         this.getProgramacionMananera();
+        this.getProgramacionActualMananera();
         
 
+    //      this.getProgramacion();
+    //  this.getProgramacionActual();
+        
+      
 
     },
     methods: {
@@ -225,8 +261,40 @@ export default {
 
 
         },
+        async getProgramacionMananera(){
+            let url= '/programacion-estacion/9'
+            const res= await axios.get(url)
+            this.estacionmananera= res.data.estacion
+
+        },
+        async getProgramacionActualMananera(){
+            let url= '/programacion-estacion-actual/9'
+            const res= await axios.get(url)
+            this.programacionactualmananera= res.data.programacion
+
+
+        },
+    //     async getProgramacion(){
+    //     let url = '/programacion-estacion/7'
+    //     const res= await axios.get(url)
+    //     this.programacion = res.data.programacion
+    //     this.estacion = res.data.estacion
+
+
+    // },
+    // async getProgramacionActual(){
+    //         let url= '/programacion-estacion-actual/7'
+    //         const res= await axios.get(url)
+    //         this.programacionactual= res.data.programacion
+    // },
+        
+         moment: function (date) {
+            return moment().format('HH:mm');
+        },
+ 
 
 
     },
+   
 }
 </script>

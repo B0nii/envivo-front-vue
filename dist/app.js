@@ -2864,6 +2864,205 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMañanera.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/LaMañanera.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      estacion: [],
+      programacion: [],
+      programacionactual: [],
+      loading: true
+    };
+  },
+  methods: {
+    getProgramacion: function () {
+      var _getProgramacion = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                url = '/programacion-estacion/9';
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context.sent;
+                this.programacion = res.data.programacion;
+                this.estacion = res.data.estacion;
+
+              case 6:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getProgramacion() {
+        return _getProgramacion.apply(this, arguments);
+      }
+
+      return getProgramacion;
+    }(),
+    getProgramacionActual: function () {
+      var _getProgramacionActual = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                url = '/programacion-estacion-actual/9';
+                _context2.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context2.sent;
+                this.programacionactual = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function getProgramacionActual() {
+        return _getProgramacionActual.apply(this, arguments);
+      }
+
+      return getProgramacionActual;
+    }()
+  },
+  mounted: function mounted() {
+    this.getProgramacion();
+    this.getProgramacionActual();
+  },
+  // cortamos la hora  a h:mm co  la function formattime
+  filters: {
+    formatime: function formatime(date) {
+      var hora_format = date.split(":");
+      return hora_format[0] + ':' + hora_format[1];
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/slider.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/slider.vue?vue&type=script&lang=js& ***!
@@ -2877,6 +3076,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -2982,6 +3183,53 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+<<<<<<< HEAD
+=======
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+>>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2996,7 +3244,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       programacionactualTeleformula: [],
       estacion970: [],
       programacionactual970: []
-    }, _defineProperty(_ref, "estacionTeleformula", []), _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "estacion1470", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "estacion1500", []), _defineProperty(_ref, "programacionactual1500", []), _ref;
+    }, _defineProperty(_ref, "estacionTeleformula", []), _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "estacion1470", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "estacion1500", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "estacionmananera", []), _defineProperty(_ref, "programacionactualmananera", []), _ref;
   },
   mounted: function mounted() {
     this.getProgramacion103();
@@ -3011,6 +3259,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.getProgramacionActual470();
     this.getProgramacion1500();
     this.getProgramacionActual1500();
+    this.getProgramacionMananera();
+    this.getProgramacionActualMananera(); //      this.getProgramacion();
+    //  this.getProgramacionActual();
   },
   methods: {
     getProgramacion103: function () {
@@ -3385,7 +3636,83 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
 
       return getProgramacionActual1500;
-    }()
+    }(),
+    getProgramacionMananera: function () {
+      var _getProgramacionMananera = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee13() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee13$(_context13) {
+          while (1) {
+            switch (_context13.prev = _context13.next) {
+              case 0:
+                url = '/programacion-estacion/9';
+                _context13.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context13.sent;
+                this.estacionmananera = res.data.estacion;
+
+              case 5:
+              case "end":
+                return _context13.stop();
+            }
+          }
+        }, _callee13, this);
+      }));
+
+      function getProgramacionMananera() {
+        return _getProgramacionMananera.apply(this, arguments);
+      }
+
+      return getProgramacionMananera;
+    }(),
+    getProgramacionActualMananera: function () {
+      var _getProgramacionActualMananera = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee14() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee14$(_context14) {
+          while (1) {
+            switch (_context14.prev = _context14.next) {
+              case 0:
+                url = '/programacion-estacion-actual/9';
+                _context14.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context14.sent;
+                this.programacionactualmananera = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context14.stop();
+            }
+          }
+        }, _callee14, this);
+      }));
+
+      function getProgramacionActualMananera() {
+        return _getProgramacionActualMananera.apply(this, arguments);
+      }
+
+      return getProgramacionActualMananera;
+    }(),
+    //     async getProgramacion(){
+    //     let url = '/programacion-estacion/7'
+    //     const res= await axios.get(url)
+    //     this.programacion = res.data.programacion
+    //     this.estacion = res.data.estacion
+    // },
+    // async getProgramacionActual(){
+    //         let url= '/programacion-estacion-actual/7'
+    //         const res= await axios.get(url)
+    //         this.programacionactual= res.data.programacion
+    // },
+    moment: function moment(date) {
+      return moment__WEBPACK_IMPORTED_MODULE_2___default()().format('HH:mm');
+    }
   }
 });
 
@@ -22413,6 +22740,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -22589,6 +22920,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -22765,6 +23100,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -22941,6 +23280,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h3", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -23117,6 +23460,10 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h3", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -23280,6 +23627,179 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1&":
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1& ***!
+  \****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("h3", { staticClass: "text-center" }, [
+      _vm._v(_vm._s(_vm.estacion.name))
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "http://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Mañanera01.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: { src: _vm.programacionactual.programa.image_full }
+            })
+          ]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticStyle: {
+            padding: "0px",
+            margin: "0px",
+            "text-align": "center",
+            "background-color": "#212121",
+            border: "0px solid red"
+          }
+        },
+        [
+          _c("iframe", {
+            staticStyle: {
+              margin: "-5px 0 0 -5px",
+              border: "0px solid red",
+              overflow: "hidden"
+            },
+            attrs: {
+              src: _vm.estacion.audio,
+              width: "250",
+              height: "45",
+              scrolling: "no",
+              align: "center",
+              allowfullscreen: "allowfullscreen"
+            }
+          })
+        ]
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        !_vm.programacionactual.programa
+          ? _c("div", { staticClass: "col-12" }, [_vm._m(0)])
+          : _c("div", { staticClass: "col-12" }, [
+              _c("table", { staticClass: "table" }, [
+                _c("thead", { staticClass: "thead-dark" }, [
+                  _c("tr", [
+                    _c("th", { attrs: { scope: "col" } }, [
+                      _vm._v(
+                        "Descripción del programa " +
+                          _vm._s(_vm.programacionactual.programa.name) +
+                          " - " +
+                          _vm._s(_vm.programacionactual.programa.name_driver)
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [
+                      _vm._v(
+                        _vm._s(_vm.programacionactual.programa.description)
+                      )
+                    ])
+                  ])
+                ])
+              ])
+            ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-12" }, [
+          _c("table", { staticClass: "table" }, [
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "tbody",
+              _vm._l(_vm.programacion, function(programacion) {
+                return _c("tr", { key: programacion.pivot.id }, [
+                  _c("th", [
+                    _vm._v(
+                      _vm._s(
+                        _vm._f("formatime")(programacion.pivot.time_start)
+                      ) +
+                        "-" +
+                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(programacion.name))]),
+                  _vm._v(" "),
+                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
+                ])
+              }),
+              0
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("table", { staticClass: "table" }, [
+      _c("thead", { staticClass: "thead-dark" }, [
+        _c("tr", [
+          _c("td", { attrs: { scope: "col" } }, [
+            _vm._v("Descripción del programas")
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("tbody", [_c("tr", [_c("td")])])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", { staticClass: "thead-dark" }, [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Hora")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Programa")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Conductor")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/helow.vue?vue&type=template&id=b8474116&":
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/helow.vue?vue&type=template&id=b8474116& ***!
@@ -23310,7 +23830,9 @@ var render = function() {
       _vm._v(" "),
       _c("estacion-1500"),
       _vm._v(" "),
-      _c("teleformula")
+      _c("teleformula"),
+      _vm._v(" "),
+      _c("la-mananera")
     ],
     1
   )
@@ -23510,7 +24032,38 @@ var render = function() {
                 ]),
             _vm._v(" "),
             _vm._m(12)
-          ])
+          ]),
+          _vm._v(" "),
+          !_vm.programacionactualmananera.programa
+            ? _c("div", { staticClass: "slide-img" }, [
+                _vm._m(13),
+                _vm._v("\n \n")
+              ])
+            : _c("div", { staticClass: "slide-img" }, [
+                _c(
+                  "a",
+                  {
+                    attrs: {
+                      title: "LaMañanera",
+                      href:
+                        "https://testmarket.radioformula.com.mx/la-mananera/"
+                    }
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "rounded mx-auto d-block img-fluid",
+                      attrs: {
+                        src:
+                          _vm.programacionactualmananera.programa
+                            .image_thumbnail
+                      }
+                    })
+                  ]
+                ),
+                _vm._v("\n \n")
+              ]),
+          _vm._v(" "),
+          _vm._m(14)
         ])
       ])
     ])
@@ -23781,10 +24334,57 @@ var staticRenderFns = [
             attrs: {
               title: "1500 AM",
               href:
+<<<<<<< HEAD
                 "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+=======
+                "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"
+>>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
             }
           },
           [_vm._v("1500 AM")]
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        attrs: {
+          title: "LaMañanera",
+          href: "https://testmarket.radioformula.com.mx/la-mananera/"
+        }
+      },
+      [
+        _c("img", {
+          staticClass: "rounded mx-auto d-block img-fluid",
+          attrs: {
+            src:
+              "https://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Man%CC%83anera01.jpg"
+          }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "slide-content" }, [
+      _c("h3", { staticClass: "post-title" }, [
+        _c(
+          "a",
+          {
+            attrs: {
+              title: "LaMañanera",
+              href:
+                "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+            }
+          },
+          [_vm._v("La Mañanera")]
         )
       ])
     ])
@@ -23812,6 +24412,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("h1", { staticClass: "text-center" }, [_vm._v("Teleformula")]),
+    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       !_vm.programacionactual.programa
         ? _c("div", { staticClass: "row" }, [
@@ -36097,13 +36699,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_1500__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/1500 */ "./vue/components/1500.vue");
 /* harmony import */ var _components_teleformula__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/teleformula */ "./vue/components/teleformula.vue");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/slider */ "./vue/components/slider.vue");
+/* harmony import */ var _components_LaMa_anera__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/LaMañanera */ "./vue/components/LaMañanera.vue");
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
+<<<<<<< HEAD
 
 axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
 //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+=======
+ //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+// axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api/'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+>>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+
 
 
 
@@ -36121,6 +36732,7 @@ Vue.component('estacion-1470', _components_1470__WEBPACK_IMPORTED_MODULE_5__["de
 Vue.component('estacion-1500', _components_1500__WEBPACK_IMPORTED_MODULE_6__["default"]);
 Vue.component('teleformula', _components_teleformula__WEBPACK_IMPORTED_MODULE_7__["default"]);
 Vue.component('slider', _components_slider__WEBPACK_IMPORTED_MODULE_8__["default"]);
+Vue.component('la-mananera', _components_LaMa_anera__WEBPACK_IMPORTED_MODULE_9__["default"]);
 var vm = new Vue({
   el: '#app',
   data: {},
@@ -36475,6 +37087,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./vue/components/LaMañanera.vue":
+/*!***************************************!*\
+  !*** ./vue/components/LaMañanera.vue ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./LaMañanera.vue?vue&type=template&id=4b2c92b1& */ "./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1&");
+/* harmony import */ var _LaMa_anera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LaMañanera.vue?vue&type=script&lang=js& */ "./vue/components/LaMañanera.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _LaMa_anera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "vue/components/LaMañanera.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./vue/components/LaMañanera.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./vue/components/LaMañanera.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LaMa_anera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./LaMañanera.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMañanera.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_LaMa_anera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1&":
+/*!**********************************************************************!*\
+  !*** ./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1& ***!
+  \**********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./LaMañanera.vue?vue&type=template&id=4b2c92b1& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMañanera.vue?vue&type=template&id=4b2c92b1&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LaMa_anera_vue_vue_type_template_id_4b2c92b1___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./vue/components/helow.vue":
 /*!**********************************!*\
   !*** ./vue/components/helow.vue ***!
@@ -36673,7 +37354,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
 
 
 /***/ })
