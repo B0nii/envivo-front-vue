@@ -3183,33 +3183,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-<<<<<<< HEAD
-=======
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -3229,7 +3202,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 
->>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -3711,7 +3683,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     //         this.programacionactual= res.data.programacion
     // },
     moment: function moment(date) {
-      return moment__WEBPACK_IMPORTED_MODULE_2___default()().format('HH:mm');
+      return moment__WEBPACK_IMPORTED_MODULE_2___default()().format('HH:mm:ss');
     }
   }
 });
@@ -23865,9 +23837,48 @@ var render = function() {
         _vm._m(0),
         _vm._v(" "),
         _c("div", { staticClass: "scrolling-slider scrolling-box-slider" }, [
+          _vm.programacionactualmananera.time_start < _vm.moment() &&
+          _vm.programacionactualmananera.time_end > _vm.moment()
+            ? _c("div", { staticClass: "slide tie-audio" }, [
+                !_vm.programacionactualmananera.programa
+                  ? _c("div", { staticClass: "slide-img" }, [
+                      _vm._m(1),
+                      _vm._v("\n \n")
+                    ])
+                  : _c("div", { staticClass: "slide-img" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "LaMañanera",
+                            href:
+                              "https://testmarket.radioformula.com.mx/la-mananera/"
+                          }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "rounded mx-auto d-block img-fluid",
+                            attrs: {
+                              src:
+                                _vm.programacionactualmananera.programa
+                                  .image_thumbnail
+                            }
+                          })
+                        ]
+                      ),
+                      _vm._v("\n \n")
+                    ]),
+                _vm._v(" "),
+                _vm._m(2)
+              ])
+            : _vm._e(),
+          _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual103.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(1)])
+              ? _c("div", { staticClass: "slide-img" }, [
+                  _vm._m(3),
+                  _vm._v("\n         \n\n")
+                ])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23890,12 +23901,12 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(2)
+            _vm._m(4)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual104.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(3)])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(5)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23918,12 +23929,12 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(4)
+            _vm._m(6)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactualTeleformula.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(5)])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(7)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23947,12 +23958,12 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(6)
+            _vm._m(8)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual970.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(7)])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(9)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -23975,12 +23986,12 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(8)
+            _vm._m(10)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual1470.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(9)])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(11)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -24003,12 +24014,12 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(10)
+            _vm._m(12)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
             !_vm.programacionactual1500.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(11)])
+              ? _c("div", { staticClass: "slide-img" }, [_vm._m(13)])
               : _c("div", { staticClass: "slide-img" }, [
                   _c(
                     "a",
@@ -24031,39 +24042,8 @@ var render = function() {
                   )
                 ]),
             _vm._v(" "),
-            _vm._m(12)
-          ]),
-          _vm._v(" "),
-          !_vm.programacionactualmananera.programa
-            ? _c("div", { staticClass: "slide-img" }, [
-                _vm._m(13),
-                _vm._v("\n \n")
-              ])
-            : _c("div", { staticClass: "slide-img" }, [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      title: "LaMañanera",
-                      href:
-                        "https://testmarket.radioformula.com.mx/la-mananera/"
-                    }
-                  },
-                  [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          _vm.programacionactualmananera.programa
-                            .image_thumbnail
-                      }
-                    })
-                  ]
-                ),
-                _vm._v("\n \n")
-              ]),
-          _vm._v(" "),
-          _vm._m(14)
+            _vm._m(14)
+          ])
         ])
       ])
     ])
@@ -24076,6 +24056,49 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "loader-overlay" }, [
       _c("div", { staticClass: "spinner-circle" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        attrs: {
+          title: "LaMañanera",
+          href: "https://testmarket.radioformula.com.mx/la-mananera/"
+        }
+      },
+      [
+        _c("img", {
+          staticClass: "rounded mx-auto d-block img-fluid",
+          attrs: {
+            src:
+              "https://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Man%CC%83anera01.jpg"
+          }
+        })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "slide-content" }, [
+      _c("h3", { staticClass: "post-title" }, [
+        _c(
+          "a",
+          {
+            attrs: {
+              title: "LaMañanera",
+              href:
+                "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+            }
+          },
+          [_vm._v("La Mañanera")]
+        )
+      ])
     ])
   },
   function() {
@@ -24334,57 +24357,10 @@ var staticRenderFns = [
             attrs: {
               title: "1500 AM",
               href:
-<<<<<<< HEAD
                 "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
-=======
-                "https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630-220x150.jpg"
->>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
             }
           },
           [_vm._v("1500 AM")]
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "LaMañanera",
-          href: "https://testmarket.radioformula.com.mx/la-mananera/"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Man%CC%83anera01.jpg"
-          }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "slide-content" }, [
-      _c("h3", { staticClass: "post-title" }, [
-        _c(
-          "a",
-          {
-            attrs: {
-              title: "LaMañanera",
-              href:
-                "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
-            }
-          },
-          [_vm._v("La Mañanera")]
         )
       ])
     ])
@@ -36703,16 +36679,12 @@ __webpack_require__.r(__webpack_exports__);
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
-<<<<<<< HEAD
-
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-=======
- //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+ // axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 // axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api/'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
->>>>>>> bfb7a339a557a343042748fce6e876d819a4951f
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://127.0.0.1:8000/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
