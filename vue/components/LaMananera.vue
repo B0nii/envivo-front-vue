@@ -3,29 +3,15 @@
        <h3 class="text-center">{{estacion.name}}</h3>
     <div class="container">
          <div v-if="!programacionactual.programa" class="row">
-             <img src="http://testmarket.radioformula.com.mx/wp-content/uploads/2020/01/La-Mañanera01.jpg"  class="rounded mx-auto d-block img-fluid">
+             <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/la-mananera_radio-formula_1200x628.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div v-else class="row">
-            <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
+            <iframe :src="programacionactual.programa.image_full" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
             <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
                 <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
             </div>    
     </div>
-        <!--<div  class="card text-center">
-            <div class="card-header">
-            Descripción Del Programa
-            </div>
-            <div v-if="!programacionactual.programa"  class="card-body">
-                  <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-            </div>
-            <div v-else  class="card-body">
-                <h5  class="card-title">{{programacionactual.programa.name_driver}} </h5>
-                <p class="card-text">{{programacionactual.programa.description}}</p>
-            </div> 
-        </div>-->
-
     <div class="container">
         <div class="row"> 
             <div  v-if="!programacionactual.programa" class="col-12">
