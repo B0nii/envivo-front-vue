@@ -10,38 +10,7 @@
         </div>
    
     </div>
-    <div class="container">
-        <div class="row"> 
-            <div  v-if="!programacionactual.programa" class="col-12">
-                <table  class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                    <td scope="col">Descripción del programa</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                    <td></td>
-                    </tr>
-                    </tbody> 
-                </table>
-            </div> 
-            <div  v-else class="col-12">
-                <table  class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                    <th scope="col">Descripción del programa {{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr >
-                    <td>{{programacionactual.programa.description}}</td>
-                    </tr>
-                    </tbody> 
-                </table>
-            </div>
-        </div>
-    </div>
+   
 
 <!--{{programacion}}
 {{programacionactual}}-->

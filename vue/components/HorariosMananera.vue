@@ -1,6 +1,37 @@
 <template>
-    
-
+    <div>
+     <div class="container">
+        <div class="row"> 
+            <div  v-if="!programacionactual.programa" class="col-12">
+                <table  class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                    <td scope="col">Descripción del programa</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td></td>
+                    </tr>
+                    </tbody> 
+                </table>
+            </div> 
+            <div  v-else class="col-12">
+                <table  class="table">
+                    <thead class="thead-dark">
+                    <tr>
+                    <th scope="col">Descripción del programa {{programacionactual.programa.name}} - {{programacionactual.programa.name_driver}}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr >
+                    <td>{{programacionactual.programa.description}}</td>
+                    </tr>
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -23,7 +54,7 @@
             </div>
         </div>
     </div>
-
+    </div>
 
 
 </template>
@@ -35,7 +66,9 @@ import moment from 'moment';
 export default {
     data(){
         return{
-          programacion:[]
+          programacion:[],
+          programacionactual:[],
+
         }
     },
     methods:{
@@ -46,10 +79,17 @@ export default {
         this.programacion = res.data.programacion
 
 
-      }
+      },
+      async getProgramacionActual(){
+            let url= '/programacion-estacion-actual/9'
+            const res= await axios.get(url)
+            this.programacionactual= res.data.programacion
+    },
     },
      mounted(){
      this.getProgramacion();
+     this.getProgramacionActual();
+
  },
   // cortamos la hora  a h:mm co  la function formattime
     filters: {
