@@ -11,12 +11,12 @@
     <div v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()" >
 
     <div  class="slide-img">
-    <a title="LaMañanera" href="https://testmarket.radioformula.com.mx/la-mananera/">
+    <a title="LaMañanera" href="https://testdo.radioformula.com.mx/la-mananera/">
         <img :src="programacionactualmananera.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content" >
-    <h3 class="post-title"><a title="LaMañanera" href="https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/">La Mañanera</a></h3>
+    <h3 class="post-title"><a title="LaMañanera" href="https://testdo.radioformula.com.mx/la-mananera/">La Mañanera</a></h3>
     </div>
     </div>
     </div>

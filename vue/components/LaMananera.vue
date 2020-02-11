@@ -8,9 +8,7 @@
         <div v-else class="row">
             <iframe :src="programacionactual.programa.image_full" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
-            <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
-                <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
-            </div>    
+   
     </div>
     <div class="container">
         <div class="row"> 

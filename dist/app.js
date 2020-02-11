@@ -2956,8 +2956,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -23622,37 +23620,7 @@ var render = function() {
                 allowfullscreen: "allowfullscreen"
               }
             })
-          ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticStyle: {
-            padding: "0px",
-            margin: "0px",
-            "text-align": "center",
-            "background-color": "#212121",
-            border: "0px solid red"
-          }
-        },
-        [
-          _c("iframe", {
-            staticStyle: {
-              margin: "-5px 0 0 -5px",
-              border: "0px solid red",
-              overflow: "hidden"
-            },
-            attrs: {
-              src: _vm.estacion.audio,
-              width: "250",
-              height: "45",
-              scrolling: "no",
-              align: "center",
-              allowfullscreen: "allowfullscreen"
-            }
-          })
-        ]
-      )
+          ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
@@ -23848,7 +23816,7 @@ var render = function() {
                           attrs: {
                             title: "LaMañanera",
                             href:
-                              "https://testmarket.radioformula.com.mx/la-mananera/"
+                              "https://testdo.radioformula.com.mx/la-mananera/"
                           }
                         },
                         [
@@ -24063,8 +24031,7 @@ var staticRenderFns = [
           {
             attrs: {
               title: "LaMañanera",
-              href:
-                "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+              href: "https://testdo.radioformula.com.mx/la-mananera/"
             }
           },
           [_vm._v("La Mañanera")]
