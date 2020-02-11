@@ -19,6 +19,7 @@ import Estacion1500 from './components/1500'
 import Teleformula from './components/teleformula'
 import slider from './components/slider'
 import LaMananera from './components/LaMananera'
+import HorariosMananera from './components/HorariosMananera'
 
 Vue.component('hellow', Helow);
 Vue.component('estacion-104', Estacion104);
@@ -29,6 +30,7 @@ Vue.component('estacion-1500', Estacion1500);
 Vue.component('teleformula', Teleformula);
 Vue.component('slider', slider);
 Vue.component('la-mananera', LaMananera);
+Vue.component('horarios-mananera', HorariosMananera);
 
 var vm = new Vue({
     el: '#app',

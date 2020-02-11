@@ -2864,6 +2864,113 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/HorariosMananera.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      programacion: []
+    };
+  },
+  methods: {
+    getProgramacion: function () {
+      var _getProgramacion = _asyncToGenerator(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                url = '/programacion-estacion/9';
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context.sent;
+                this.programacion = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function getProgramacion() {
+        return _getProgramacion.apply(this, arguments);
+      }
+
+      return getProgramacion;
+    }()
+  },
+  mounted: function mounted() {
+    this.getProgramacion();
+  },
+  // cortamos la hora  a h:mm co  la function formattime
+  filters: {
+    formatime: function formatime(date) {
+      var hora_format = date.split(":");
+      return hora_format[0] + ':' + hora_format[1];
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMananera.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/LaMananera.vue?vue&type=script&lang=js& ***!
@@ -2935,34 +3042,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       estacion: [],
-      programacion: [],
       programacionactual: [],
       loading: true
     };
@@ -2983,10 +3068,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
               case 3:
                 res = _context.sent;
-                this.programacion = res.data.programacion;
                 this.estacion = res.data.estacion;
 
-              case 6:
+              case 5:
               case "end":
                 return _context.stop();
             }
@@ -3188,36 +3272,25 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     var _ref;
 
     return _ref = {
-      estacion103: [],
       programacionactual103: [],
-      estacion104: [],
       programacionactual104: [],
-      estacionTeleformula: [],
       programacionactualTeleformula: [],
-      estacion970: [],
       programacionactual970: []
-    }, _defineProperty(_ref, "estacionTeleformula", []), _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "estacion1470", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "estacion1500", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "estacionmananera", []), _defineProperty(_ref, "programacionactualmananera", []), _ref;
+    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionactualmananera", []), _ref;
   },
   mounted: function mounted() {
-    this.getProgramacion103();
     this.getProgramacionActual103();
-    this.getProgramacion104();
     this.getProgramacionActual104();
-    this.getProgramacionTeleformula();
     this.getProgramacionActualTeleformula();
-    this.getProgramacion970();
     this.getProgramacionActual970();
-    this.getProgramacion1470();
     this.getProgramacionActual470();
-    this.getProgramacion1500();
     this.getProgramacionActual1500();
-    this.getProgramacionMananera();
     this.getProgramacionActualMananera(); //      this.getProgramacion();
     //  this.getProgramacionActual();
   },
   methods: {
-    getProgramacion103: function () {
-      var _getProgramacion = _asyncToGenerator(
+    getProgramacionActual103: function () {
+      var _getProgramacionActual = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
         var url, res;
@@ -3225,13 +3298,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                url = '/programacion-estacion/1';
+                url = '/programacion-estacion-actual/1';
                 _context.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context.sent;
-                this.estacion103 = res.data.estacion;
+                this.programacionactual103 = res.data.programacion;
 
               case 5:
               case "end":
@@ -3241,14 +3314,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee, this);
       }));
 
-      function getProgramacion103() {
-        return _getProgramacion.apply(this, arguments);
+      function getProgramacionActual103() {
+        return _getProgramacionActual.apply(this, arguments);
       }
 
-      return getProgramacion103;
+      return getProgramacionActual103;
     }(),
-    getProgramacionActual103: function () {
-      var _getProgramacionActual = _asyncToGenerator(
+    getProgramacionActual104: function () {
+      var _getProgramacionActual2 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
         var url, res;
@@ -3256,13 +3329,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                url = '/programacion-estacion-actual/1';
+                url = '/programacion-estacion-actual/2';
                 _context2.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context2.sent;
-                this.programacionactual103 = res.data.programacion;
+                this.programacionactual104 = res.data.programacion;
 
               case 5:
               case "end":
@@ -3272,14 +3345,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee2, this);
       }));
 
-      function getProgramacionActual103() {
-        return _getProgramacionActual.apply(this, arguments);
+      function getProgramacionActual104() {
+        return _getProgramacionActual2.apply(this, arguments);
       }
 
-      return getProgramacionActual103;
+      return getProgramacionActual104;
     }(),
-    getProgramacion104: function () {
-      var _getProgramacion2 = _asyncToGenerator(
+    getProgramacionActualTeleformula: function () {
+      var _getProgramacionActualTeleformula = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
         var url, res;
@@ -3287,15 +3360,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                url = '/programacion-estacion/2';
+                url = '/programacion-estacion-actual/3';
                 _context3.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context3.sent;
-                this.estacion104 = res.data.estacion;
+                this.programacionactualTeleformula = res.data.programacion;
+                this.loading = true;
 
-              case 5:
+              case 6:
               case "end":
                 return _context3.stop();
             }
@@ -3303,14 +3377,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee3, this);
       }));
 
-      function getProgramacion104() {
-        return _getProgramacion2.apply(this, arguments);
+      function getProgramacionActualTeleformula() {
+        return _getProgramacionActualTeleformula.apply(this, arguments);
       }
 
-      return getProgramacion104;
+      return getProgramacionActualTeleformula;
     }(),
-    getProgramacionActual104: function () {
-      var _getProgramacionActual2 = _asyncToGenerator(
+    getProgramacionActual970: function () {
+      var _getProgramacionActual3 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4() {
         var url, res;
@@ -3318,13 +3392,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                url = '/programacion-estacion-actual/2';
+                url = '/programacion-estacion-actual/4';
                 _context4.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context4.sent;
-                this.programacionactual104 = res.data.programacion;
+                this.programacionactual970 = res.data.programacion;
 
               case 5:
               case "end":
@@ -3334,14 +3408,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee4, this);
       }));
 
-      function getProgramacionActual104() {
-        return _getProgramacionActual2.apply(this, arguments);
+      function getProgramacionActual970() {
+        return _getProgramacionActual3.apply(this, arguments);
       }
 
-      return getProgramacionActual104;
+      return getProgramacionActual970;
     }(),
-    getProgramacionTeleformula: function () {
-      var _getProgramacionTeleformula = _asyncToGenerator(
+    getProgramacionActual470: function () {
+      var _getProgramacionActual4 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
         var url, res;
@@ -3349,13 +3423,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                url = '/programacion-estacion/3';
+                url = '/programacion-estacion-actual/5';
                 _context5.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context5.sent;
-                this.estacionTeleformula = res.data.estacion;
+                this.programacionactual1470 = res.data.programacion;
 
               case 5:
               case "end":
@@ -3365,14 +3439,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         }, _callee5, this);
       }));
 
-      function getProgramacionTeleformula() {
-        return _getProgramacionTeleformula.apply(this, arguments);
+      function getProgramacionActual470() {
+        return _getProgramacionActual4.apply(this, arguments);
       }
 
-      return getProgramacionTeleformula;
+      return getProgramacionActual470;
     }(),
-    getProgramacionActualTeleformula: function () {
-      var _getProgramacionActualTeleformula = _asyncToGenerator(
+    getProgramacionActual1500: function () {
+      var _getProgramacionActual5 = _asyncToGenerator(
       /*#__PURE__*/
       _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
         var url, res;
@@ -3380,207 +3454,20 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                url = '/programacion-estacion-actual/3';
+                url = '/programacion-estacion-actual/6';
                 _context6.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
                 res = _context6.sent;
-                this.programacionactualTeleformula = res.data.programacion;
-                this.loading = true;
+                this.programacionactual1500 = res.data.programacion;
 
-              case 6:
+              case 5:
               case "end":
                 return _context6.stop();
             }
           }
         }, _callee6, this);
-      }));
-
-      function getProgramacionActualTeleformula() {
-        return _getProgramacionActualTeleformula.apply(this, arguments);
-      }
-
-      return getProgramacionActualTeleformula;
-    }(),
-    getProgramacion970: function () {
-      var _getProgramacion3 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
-          while (1) {
-            switch (_context7.prev = _context7.next) {
-              case 0:
-                url = '/programacion-estacion/4';
-                _context7.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context7.sent;
-                this.estacion970 = res.data.estacion;
-
-              case 5:
-              case "end":
-                return _context7.stop();
-            }
-          }
-        }, _callee7, this);
-      }));
-
-      function getProgramacion970() {
-        return _getProgramacion3.apply(this, arguments);
-      }
-
-      return getProgramacion970;
-    }(),
-    getProgramacionActual970: function () {
-      var _getProgramacionActual3 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee8() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee8$(_context8) {
-          while (1) {
-            switch (_context8.prev = _context8.next) {
-              case 0:
-                url = '/programacion-estacion-actual/4';
-                _context8.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context8.sent;
-                this.programacionactual970 = res.data.programacion;
-
-              case 5:
-              case "end":
-                return _context8.stop();
-            }
-          }
-        }, _callee8, this);
-      }));
-
-      function getProgramacionActual970() {
-        return _getProgramacionActual3.apply(this, arguments);
-      }
-
-      return getProgramacionActual970;
-    }(),
-    getProgramacion1470: function () {
-      var _getProgramacion4 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee9() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee9$(_context9) {
-          while (1) {
-            switch (_context9.prev = _context9.next) {
-              case 0:
-                url = '/programacion-estacion/5';
-                _context9.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context9.sent;
-                this.estacion1470 = res.data.estacion;
-
-              case 5:
-              case "end":
-                return _context9.stop();
-            }
-          }
-        }, _callee9, this);
-      }));
-
-      function getProgramacion1470() {
-        return _getProgramacion4.apply(this, arguments);
-      }
-
-      return getProgramacion1470;
-    }(),
-    getProgramacionActual470: function () {
-      var _getProgramacionActual4 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee10() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee10$(_context10) {
-          while (1) {
-            switch (_context10.prev = _context10.next) {
-              case 0:
-                url = '/programacion-estacion-actual/5';
-                _context10.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context10.sent;
-                this.programacionactual1470 = res.data.programacion;
-
-              case 5:
-              case "end":
-                return _context10.stop();
-            }
-          }
-        }, _callee10, this);
-      }));
-
-      function getProgramacionActual470() {
-        return _getProgramacionActual4.apply(this, arguments);
-      }
-
-      return getProgramacionActual470;
-    }(),
-    getProgramacion1500: function () {
-      var _getProgramacion5 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee11() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee11$(_context11) {
-          while (1) {
-            switch (_context11.prev = _context11.next) {
-              case 0:
-                url = '/programacion-estacion/6';
-                _context11.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context11.sent;
-                this.estacion1500 = res.data.estacion;
-
-              case 5:
-              case "end":
-                return _context11.stop();
-            }
-          }
-        }, _callee11, this);
-      }));
-
-      function getProgramacion1500() {
-        return _getProgramacion5.apply(this, arguments);
-      }
-
-      return getProgramacion1500;
-    }(),
-    getProgramacionActual1500: function () {
-      var _getProgramacionActual5 = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee12() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee12$(_context12) {
-          while (1) {
-            switch (_context12.prev = _context12.next) {
-              case 0:
-                url = '/programacion-estacion-actual/6';
-                _context12.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context12.sent;
-                this.programacionactual1500 = res.data.programacion;
-
-              case 5:
-              case "end":
-                return _context12.stop();
-            }
-          }
-        }, _callee12, this);
       }));
 
       function getProgramacionActual1500() {
@@ -3589,60 +3476,29 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       return getProgramacionActual1500;
     }(),
-    getProgramacionMananera: function () {
-      var _getProgramacionMananera = _asyncToGenerator(
-      /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee13() {
-        var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee13$(_context13) {
-          while (1) {
-            switch (_context13.prev = _context13.next) {
-              case 0:
-                url = '/programacion-estacion/9';
-                _context13.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
-
-              case 3:
-                res = _context13.sent;
-                this.estacionmananera = res.data.estacion;
-
-              case 5:
-              case "end":
-                return _context13.stop();
-            }
-          }
-        }, _callee13, this);
-      }));
-
-      function getProgramacionMananera() {
-        return _getProgramacionMananera.apply(this, arguments);
-      }
-
-      return getProgramacionMananera;
-    }(),
     getProgramacionActualMananera: function () {
       var _getProgramacionActualMananera = _asyncToGenerator(
       /*#__PURE__*/
-      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee14() {
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
         var url, res;
-        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee14$(_context14) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
           while (1) {
-            switch (_context14.prev = _context14.next) {
+            switch (_context7.prev = _context7.next) {
               case 0:
                 url = '/programacion-estacion-actual/9';
-                _context14.next = 3;
+                _context7.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
               case 3:
-                res = _context14.sent;
+                res = _context7.sent;
                 this.programacionactualmananera = res.data.programacion;
 
               case 5:
               case "end":
-                return _context14.stop();
+                return _context7.stop();
             }
           }
-        }, _callee14, this);
+        }, _callee7, this);
       }));
 
       function getProgramacionActualMananera() {
@@ -23579,6 +23435,73 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("table", { staticClass: "table" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            _vm._l(_vm.programacion, function(programacion) {
+              return _c("tr", { key: programacion.pivot.id }, [
+                _c("th", [
+                  _vm._v(
+                    _vm._s(_vm._f("formatime")(programacion.pivot.time_start)) +
+                      "-" +
+                      _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
+                  )
+                ]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(programacion.name))]),
+                _vm._v(" "),
+                _c("td", [_vm._v(_vm._s(programacion.name_driver))])
+              ])
+            }),
+            0
+          )
+        ])
+      ])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("thead", { staticClass: "thead-dark" }, [
+      _c("tr", [
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Hora")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Programa")]),
+        _vm._v(" "),
+        _c("th", { attrs: { scope: "col" } }, [_vm._v("Conductor")])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/LaMananera.vue?vue&type=template&id=4997afd4&":
 /*!****************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/LaMananera.vue?vue&type=template&id=4997afd4& ***!
@@ -23654,38 +23577,6 @@ var render = function() {
               ])
             ])
       ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(1),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("th", [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
-        ])
-      ])
     ])
   ])
 }
@@ -23698,26 +23589,12 @@ var staticRenderFns = [
       _c("thead", { staticClass: "thead-dark" }, [
         _c("tr", [
           _c("td", { attrs: { scope: "col" } }, [
-            _vm._v("Descripción del programas")
+            _vm._v("Descripción del programa")
           ])
         ])
       ]),
       _vm._v(" "),
       _c("tbody", [_c("tr", [_c("td")])])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("thead", { staticClass: "thead-dark" }, [
-      _c("tr", [
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Hora")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Programa")]),
-        _vm._v(" "),
-        _c("th", { attrs: { scope: "col" } }, [_vm._v("Conductor")])
-      ])
     ])
   }
 ]
@@ -23759,7 +23636,9 @@ var render = function() {
       _vm._v(" "),
       _c("teleformula"),
       _vm._v(" "),
-      _c("la-mananera")
+      _c("la-mananera"),
+      _vm._v(" "),
+      _c("horarios-mananera")
     ],
     1
   )
@@ -36614,6 +36493,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_teleformula__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/teleformula */ "./vue/components/teleformula.vue");
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/slider */ "./vue/components/slider.vue");
 /* harmony import */ var _components_LaMananera__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/LaMananera */ "./vue/components/LaMananera.vue");
+/* harmony import */ var _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/HorariosMananera */ "./vue/components/HorariosMananera.vue");
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
@@ -36633,6 +36513,7 @@ axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.
 
 
 
+
 Vue.component('hellow', _components_helow__WEBPACK_IMPORTED_MODULE_1__["default"]);
 Vue.component('estacion-104', _components_104__WEBPACK_IMPORTED_MODULE_2__["default"]);
 Vue.component('estacion-103', _components_103__WEBPACK_IMPORTED_MODULE_3__["default"]);
@@ -36642,6 +36523,7 @@ Vue.component('estacion-1500', _components_1500__WEBPACK_IMPORTED_MODULE_6__["de
 Vue.component('teleformula', _components_teleformula__WEBPACK_IMPORTED_MODULE_7__["default"]);
 Vue.component('slider', _components_slider__WEBPACK_IMPORTED_MODULE_8__["default"]);
 Vue.component('la-mananera', _components_LaMananera__WEBPACK_IMPORTED_MODULE_9__["default"]);
+Vue.component('horarios-mananera', _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__["default"]);
 var vm = new Vue({
   el: '#app',
   data: {},
@@ -36996,6 +36878,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./vue/components/HorariosMananera.vue":
+/*!*********************************************!*\
+  !*** ./vue/components/HorariosMananera.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HorariosMananera.vue?vue&type=template&id=93278ca0& */ "./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0&");
+/* harmony import */ var _HorariosMananera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HorariosMananera.vue?vue&type=script&lang=js& */ "./vue/components/HorariosMananera.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _HorariosMananera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "vue/components/HorariosMananera.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./vue/components/HorariosMananera.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./vue/components/HorariosMananera.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HorariosMananera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./HorariosMananera.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HorariosMananera_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0&":
+/*!****************************************************************************!*\
+  !*** ./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0& ***!
+  \****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./HorariosMananera.vue?vue&type=template&id=93278ca0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorariosMananera_vue_vue_type_template_id_93278ca0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./vue/components/LaMananera.vue":
 /*!***************************************!*\
   !*** ./vue/components/LaMananera.vue ***!
@@ -37263,7 +37214,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
 
 
 /***/ })

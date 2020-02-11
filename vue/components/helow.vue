@@ -8,6 +8,7 @@
         <estacion-1500/>
         <teleformula/>
         <la-mananera/>
+        <horarios-mananera/>
 
     </div>   
 </template>

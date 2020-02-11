@@ -16,7 +16,7 @@
                 <table  class="table">
                     <thead class="thead-dark">
                     <tr>
-                    <td scope="col">Descripción del programas</td>
+                    <td scope="col">Descripción del programa</td>
                     </tr>
                     </thead>
                     <tbody>
@@ -42,28 +42,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                    <th scope="col">Hora</th>
-                    <th scope="col">Programa</th>
-                    <th scope="col">Conductor</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <th>{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</th>
-                    <td>{{programacion.name}}</td>
-                    <td>{{programacion.name_driver}}</td>
-                    </tr>
-                    </tbody> 
-                </table>
-            </div>
-        </div>
-    </div>
+
 <!--{{programacion}}
 {{programacionactual}}-->
     </div>
@@ -76,7 +55,6 @@ export default {
     data(){
         return{
             estacion:[],
-            programacion:[],
             programacionactual:[],
             loading: true,
          
@@ -86,7 +64,6 @@ export default {
     async getProgramacion(){
         let url = '/programacion-estacion/9'
         const res= await axios.get(url)
-        this.programacion = res.data.programacion
         this.estacion = res.data.estacion
 
 
