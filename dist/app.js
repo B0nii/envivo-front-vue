@@ -2180,7 +2180,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2289,7 +2288,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -2576,7 +2574,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2685,7 +2682,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -3056,7 +3052,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -3578,7 +3573,6 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-//
 //
 //
 //
@@ -22581,10 +22575,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -22761,10 +22751,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -22941,10 +22927,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -23121,10 +23103,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -23301,10 +23279,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c(
         "div",
@@ -23604,10 +23578,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       !_vm.programacionactual.programa
         ? _c("div", { staticClass: "row" }, [
@@ -23615,14 +23585,14 @@ var render = function() {
               staticClass: "rounded mx-auto d-block img-fluid",
               attrs: {
                 src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/la-mananera_radio-formula_1200x628.jpg"
+                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/la-mananera-en-vivo_radio-formula_1200x628.jpg"
               }
             })
           ])
         : _c("div", { staticClass: "row" }, [
             _c("iframe", {
               attrs: {
-                src: _vm.programacionactual.programa.image_full,
+                src: _vm.programacionactual.programa.video,
                 width: "560",
                 height: "315",
                 frameborder: "0",
@@ -23731,7 +23701,7 @@ var render = function() {
                           attrs: {
                             title: "LaMañanera",
                             href:
-                              "https://testdo.radioformula.com.mx/la-mananera/"
+                              "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
                           }
                         },
                         [
@@ -23946,7 +23916,8 @@ var staticRenderFns = [
           {
             attrs: {
               title: "LaMañanera",
-              href: "https://testdo.radioformula.com.mx/la-mananera/"
+              href:
+                "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
             }
           },
           [_vm._v("La Mañanera")]
@@ -24241,8 +24212,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", { staticClass: "text-center" }, [_vm._v("Teleformula")]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       !_vm.programacionactual.programa
         ? _c("div", { staticClass: "row" }, [
@@ -36533,11 +36502,11 @@ __webpack_require__.r(__webpack_exports__);
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
- // axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
-//axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-//axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
@@ -37250,7 +37219,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
 
 
 /***/ })

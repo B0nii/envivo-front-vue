@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1 class="text-center">Teleformula</h1>
     <div class="container">
         <div v-if="!programacionactual.programa" class="row">
             <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"  class="rounded mx-auto d-block img-fluid">

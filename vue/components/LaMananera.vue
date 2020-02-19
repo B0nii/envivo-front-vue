@@ -2,10 +2,10 @@
  <div>
     <div class="container">
          <div v-if="!programacionactual.programa" class="row">
-             <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/la-mananera_radio-formula_1200x628.jpg"  class="rounded mx-auto d-block img-fluid">
+             <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/la-mananera-en-vivo_radio-formula_1200x628.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div v-else class="row">
-            <iframe :src="programacionactual.programa.image_full" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <iframe :src="programacionactual.programa.video" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
    
     </div>
