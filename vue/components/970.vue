@@ -61,10 +61,10 @@
                 <p class="card-text">{{programacionactual.programa.description}}</p>
             </div> 
         </div>-->
-    <div class="container">
+      <div class="container">
         <div class="row">
             <div class="col-12">
-                <table class="table">
+                <table style="width:100%" class="table">
                     <thead class="thead-dark">
                     <tr>
                     <th scope="col">Hora</th>
@@ -74,11 +74,13 @@
                     </thead>
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
-                    <td>{{programacion.name}}</td>
-                    <td>{{programacion.name_driver}}</td>
-                    </tr> 
-                    </tbody> 
+                    <td style="width:24%">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
+                    <td style="width:38%">{{programacion.name}}</td>
+                    <td style="width:38%">{{programacion.name_driver}}</td>
+                    </tr>
+                    </tbody>  
+
+                    
                 </table>
             </div>
         </div>

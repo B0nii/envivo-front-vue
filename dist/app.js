@@ -1973,6 +1973,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2378,6 +2380,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2577,6 +2581,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2685,6 +2691,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
 //
 //
 //
@@ -3578,6 +3586,8 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
+//
+//
 //
 //
 //
@@ -22673,31 +22683,41 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -22853,31 +22873,41 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -23033,31 +23063,41 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -23213,31 +23253,41 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -23396,31 +23446,41 @@ var render = function() {
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
@@ -23604,10 +23664,6 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h3", { staticClass: "text-center" }, [
-      _vm._v(_vm._s(_vm.estacion.name))
-    ]),
-    _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       !_vm.programacionactual.programa
         ? _c("div", { staticClass: "row" }, [
@@ -23623,8 +23679,8 @@ var render = function() {
             _c("iframe", {
               attrs: {
                 src: _vm.programacionactual.programa.image_full,
-                width: "560",
-                height: "315",
+                width: "640",
+                height: "360",
                 frameborder: "0",
                 allowfullscreen: "allowfullscreen"
               }
@@ -23731,7 +23787,7 @@ var render = function() {
                           attrs: {
                             title: "LaMañanera",
                             href:
-                              "https://testdo.radioformula.com.mx/la-mananera/"
+                              "https://testdo.radioformula.com.mx/la-mananera-en-vivo/"
                           }
                         },
                         [
@@ -23946,7 +24002,7 @@ var staticRenderFns = [
           {
             attrs: {
               title: "LaMañanera",
-              href: "https://testdo.radioformula.com.mx/la-mananera/"
+              href: "https://testdo.radioformula.com.mx/la-mananera-en-vivo/"
             }
           },
           [_vm._v("La Mañanera")]
@@ -24299,33 +24355,43 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "entry row" }, [
+      _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-12" }, [
-          _c("table", { staticClass: "table table-bordered" }, [
-            _vm._m(2),
-            _vm._v(" "),
-            _c(
-              "tbody",
-              _vm._l(_vm.programacion, function(programacion) {
-                return _c("tr", { key: programacion.pivot.id }, [
-                  _c("td", { staticStyle: { width: "100px" } }, [
-                    _vm._v(
-                      _vm._s(
-                        _vm._f("formatime")(programacion.pivot.time_start)
-                      ) +
-                        "-" +
-                        _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name))]),
-                  _vm._v(" "),
-                  _c("td", [_vm._v(_vm._s(programacion.name_driver))])
-                ])
-              }),
-              0
-            )
-          ])
+          _c(
+            "table",
+            { staticClass: "table", staticStyle: { width: "100%" } },
+            [
+              _vm._m(2),
+              _vm._v(" "),
+              _c(
+                "tbody",
+                _vm._l(_vm.programacion, function(programacion) {
+                  return _c("tr", { key: programacion.pivot.id }, [
+                    _c("td", { staticStyle: { width: "24%" } }, [
+                      _vm._v(
+                        _vm._s(
+                          _vm._f("formatime")(programacion.pivot.time_start)
+                        ) +
+                          "-" +
+                          _vm._s(
+                            _vm._f("formatime")(programacion.pivot.time_end)
+                          )
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name))
+                    ]),
+                    _vm._v(" "),
+                    _c("td", { staticStyle: { width: "38%" } }, [
+                      _vm._v(_vm._s(programacion.name_driver))
+                    ])
+                  ])
+                }),
+                0
+              )
+            ]
+          )
         ])
       ])
     ])
