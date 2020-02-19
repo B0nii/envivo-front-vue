@@ -1,19 +1,11 @@
 <template>
  <div>
-<<<<<<< HEAD
-      
-=======
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
     <div class="container">
          <div v-if="!programacionactual.programa" class="row">
              <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/la-mananera-en-vivo_radio-formula_1200x628.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div v-else class="row">
-<<<<<<< HEAD
-            <iframe :src="programacionactual.programa.image_full" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-=======
             <iframe :src="programacionactual.programa.video" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
         </div>
    
     </div>

@@ -2378,12 +2378,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-<<<<<<< HEAD
 //
 //
-//
-=======
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2582,12 +2578,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-<<<<<<< HEAD
 //
 //
-//
-=======
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2785,12 +2777,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-<<<<<<< HEAD
 //
 //
-//
-=======
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -3679,12 +3667,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-<<<<<<< HEAD
 //
 //
-//
-=======
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -23668,15 +23652,9 @@ var render = function() {
         : _c("div", { staticClass: "row" }, [
             _c("iframe", {
               attrs: {
-<<<<<<< HEAD
-                src: _vm.programacionactual.programa.image_full,
-                width: "640",
-                height: "360",
-=======
                 src: _vm.programacionactual.programa.video,
                 width: "560",
                 height: "315",
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
                 frameborder: "0",
                 allowfullscreen: "allowfullscreen"
               }
@@ -23766,8 +23744,11 @@ var render = function() {
                 {
                   name: "show",
                   rawName: "v-show",
-                  value: _vm.programacionactualmananera != "",
-                  expression: "programacionactualmananera != ''"
+                  value:
+                    _vm.programacionactualmananera.time_start < _vm.moment() &&
+                    _vm.programacionactualmananera.time_end > _vm.moment(),
+                  expression:
+                    "programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()"
                 }
               ],
               staticClass: "slide tie-audio"
@@ -23783,11 +23764,7 @@ var render = function() {
                           attrs: {
                             title: "LaMañanera",
                             href:
-<<<<<<< HEAD
-                              "https://testdo.radioformula.com.mx/la-mananera-en-vivo/"
-=======
                               "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
                           }
                         },
                         [
@@ -24002,12 +23979,8 @@ var staticRenderFns = [
           {
             attrs: {
               title: "LaMañanera",
-<<<<<<< HEAD
-              href: "https://testdo.radioformula.com.mx/la-mananera-en-vivo/"
-=======
               href:
                 "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
->>>>>>> 03fbd2e2a1ad47dd792fe7fade60262cdc441768
             }
           },
           [_vm._v("La Mañanera")]
@@ -37319,7 +37292,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
 
 
 /***/ })

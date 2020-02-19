@@ -7,7 +7,7 @@
     <div class="spinner-circle"></div>
     </div>
     <div class="scrolling-slider scrolling-box-slider">
-    <div class="slide tie-audio" v-show="programacionactualmananera != ''"> 
+    <div class="slide tie-audio" v-show="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()"> 
     <div v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()" >
 
     <div  class="slide-img">
