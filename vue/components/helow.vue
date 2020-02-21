@@ -1,5 +1,6 @@
 <template>
     <div>
+        <sliderdos/>
         <slider/>
         <estacion-104/>
         <estacion-103/>
