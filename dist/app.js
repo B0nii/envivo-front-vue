@@ -3709,6 +3709,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -24684,16 +24688,7 @@ var render = function() {
       _vm.programacionactualmananera.time_end > _vm.moment()
         ? _c(
             "carousel",
-            {
-              attrs: {
-                margin: 4,
-                items: 3,
-                loop: false,
-                nav: false,
-                autoHeight: true,
-                autoWidth: "true"
-              }
-            },
+            { attrs: { margin: 4, items: 3, loop: false, nav: false } },
             [
               _vm.programacionactualmananera.programa
                 ? _c("div", [
@@ -24704,7 +24699,27 @@ var render = function() {
                           _vm.programacionactualmananera.programa
                             .image_thumbnail
                       }
-                    })
+                    }),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("h3", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "LaMañanera",
+                            href:
+                              "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("La Mañanera")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
@@ -38137,7 +38152,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp7.3\htdocs\api-vue-horarios\vue\app.js */"./vue/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\api-vue-horarios2020\vue\app.js */"./vue/app.js");
 
 
 /***/ })

@@ -1,10 +1,14 @@
 <template>
   <div >
-    <carousel v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()" :margin="4" :items="3" :loop="false" :nav="false" :autoHeight="true" autoWidth="true">
+    <carousel v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()" :margin="4" :items="3" :loop="false" :nav="false">
       <!-- Inicia Estacion Mañanera -->
         <div v-if="programacionactualmananera.programa" >
           <img  :src="programacionactualmananera.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
+          <br>
+         <h3 style="text-align: center;"><a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"><p style="color:#0f4d97">La Mañanera</p></a></h3>
+        
         </div>
+        
       <!-- Termina Estacion Mañanera -->
       <!-- Inicia Estacion 103 -->
       <div v-if="!programacionactual103.programa">
