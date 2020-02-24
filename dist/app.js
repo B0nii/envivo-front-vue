@@ -3521,7 +3521,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
-                url = '/programacion-estacion-actual/9';
+                url = '/programacion-estacion-actual/7';
                 _context7.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3587,6 +3587,71 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3936,7 +4001,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
-                url = '/programacion-estacion-actual/9';
+                url = '/programacion-estacion-actual/7';
                 _context7.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -24688,22 +24753,47 @@ var render = function() {
       _vm.programacionactualmananera.time_end > _vm.moment()
         ? _c(
             "carousel",
-            { attrs: { margin: 4, items: 3, loop: false, nav: false } },
+            {
+              attrs: {
+                margin: 8,
+                loop: false,
+                nav: false,
+                responsive: {
+                  0: { items: 1, nav: false },
+                  600: { items: 3, nav: false }
+                }
+              }
+            },
             [
               _vm.programacionactualmananera.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          _vm.programacionactualmananera.programa
-                            .image_thumbnail
-                      }
-                    }),
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "LaMañanera",
+                          href:
+                            "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
                     _vm._v(" "),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("h3", { staticStyle: { "text-align": "center" } }, [
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
                       _c(
                         "a",
                         {
@@ -24725,129 +24815,556 @@ var render = function() {
               _vm._v(" "),
               !_vm.programacionactual103.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "103.3. FM",
+                          href:
+                            "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "103.3 FM",
+                            href:
+                              "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("103.3 FM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactual103.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src: _vm.programacionactual103.programa.image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "103.3. FM",
+                          href:
+                            "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactual103.programa.image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "103.3 FM",
+                            href:
+                              "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("103.3 FM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.programacionactual104.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "104.1 FM",
+                          href:
+                            "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "104.1 FM",
+                            href:
+                              "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("104.1 FM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactual104.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src: _vm.programacionactual104.programa.image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "104.1 FM",
+                          href:
+                            "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactual104.programa.image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "104.1 FM",
+                            href:
+                              "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("104.1 FM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.programacionactualTeleformula.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "Telefórmula",
+                          href:
+                            "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "Telefórmula",
+                            href:
+                              "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("Telefórmula")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactualTeleformula.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          _vm.programacionactualTeleformula.programa
-                            .image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "Telefórmula",
+                          href:
+                            "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactualTeleformula.programa
+                                .image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "Telefórmula",
+                            href:
+                              "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("Telefórmula")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.programacionactual970.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "970 AM",
+                          href:
+                            "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "970 AM",
+                            href:
+                              "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("970 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactual970.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src: _vm.programacionactual970.programa.image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "970 AM",
+                          href:
+                            "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactual970.programa.image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "970 AM",
+                            href:
+                              "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("970 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.programacionactual1470.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "1470 AM",
+                          href:
+                            "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "1470 AM",
+                            href:
+                              "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("1470 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactual1470.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src: _vm.programacionactual1470.programa.image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "1470 AM",
+                          href:
+                            "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactual1470.programa
+                                .image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "1470 AM",
+                            href:
+                              "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("1470 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e(),
               _vm._v(" "),
               !_vm.programacionactual1500.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src:
-                          "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "1500 AM",
+                          href:
+                            "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "1500 AM",
+                            href:
+                              "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("1500 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm.programacionactual1500.programa
                 ? _c("div", [
-                    _c("img", {
-                      staticClass: "rounded mx-auto d-block img-fluid",
-                      attrs: {
-                        src: _vm.programacionactual1500.programa.image_thumbnail
-                      }
-                    })
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          title: "1500 AM",
+                          href:
+                            "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                        }
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "rounded mx-auto d-block img-fluid",
+                          staticStyle: {
+                            width: "330px",
+                            height: "133px",
+                            margin: "auto"
+                          },
+                          attrs: {
+                            src:
+                              _vm.programacionactual1500.programa
+                                .image_thumbnail
+                          }
+                        })
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("h4", { staticStyle: { "text-align": "center" } }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            title: "1500 AM",
+                            href:
+                              "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                          }
+                        },
+                        [
+                          _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                            _vm._v("1500 AM")
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 : _vm._e()
             ]
@@ -24857,140 +25374,573 @@ var render = function() {
             [
               _c(
                 "carousel",
-                { attrs: { margin: 4, items: 3, loop: false, nav: false } },
+                {
+                  attrs: {
+                    margin: 8,
+                    loop: false,
+                    nav: false,
+                    responsive: {
+                      0: { items: 1, nav: false },
+                      600: { items: 3, nav: false }
+                    }
+                  }
+                },
                 [
                   !_vm.programacionactual103.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "103.3. FM",
+                              href:
+                                "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "103.3 FM",
+                                href:
+                                  "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("103.3 FM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactual103.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactual103.programa.image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "103.3. FM",
+                              href:
+                                "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactual103.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "103.3 FM",
+                                href:
+                                  "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("103.3 FM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   !_vm.programacionactual104.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "104.1 FM",
+                              href:
+                                "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "104.1 FM",
+                                href:
+                                  "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("104.1 FM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactual104.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactual104.programa.image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "104.1 FM",
+                              href:
+                                "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactual104.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "104.1 FM",
+                                href:
+                                  "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("104.1 FM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   !_vm.programacionactualTeleformula.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "Telefórmula",
+                              href:
+                                "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "Telefórmula",
+                                href:
+                                  "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("Telefórmula")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactualTeleformula.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactualTeleformula.programa
-                                .image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "Telefórmula",
+                              href:
+                                "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactualTeleformula.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "Telefórmula",
+                                href:
+                                  "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("Telefórmula")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   !_vm.programacionactual970.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "970 AM",
+                              href:
+                                "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "970 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("970 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactual970.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactual970.programa.image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "970 AM",
+                              href:
+                                "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactual970.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "970 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("970 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   !_vm.programacionactual1470.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "1470 AM",
+                              href:
+                                "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "1470 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("1470 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactual1470.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactual1470.programa
-                                .image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "1470 AM",
+                              href:
+                                "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactual1470.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "1470 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("1470 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e(),
                   _vm._v(" "),
                   !_vm.programacionactual1500.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "1500 AM",
+                              href:
+                                "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "1500 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("1500 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm.programacionactual1500.programa
                     ? _c("div", [
-                        _c("img", {
-                          staticClass: "rounded mx-auto d-block img-fluid",
-                          attrs: {
-                            src:
-                              _vm.programacionactual1500.programa
-                                .image_thumbnail
-                          }
-                        })
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              title: "1500 AM",
+                              href:
+                                "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                            }
+                          },
+                          [
+                            _c("img", {
+                              staticClass: "rounded mx-auto d-block img-fluid",
+                              staticStyle: {
+                                width: "330px",
+                                height: "133px",
+                                margin: "auto"
+                              },
+                              attrs: {
+                                src:
+                                  _vm.programacionactual1500.programa
+                                    .image_thumbnail
+                              }
+                            })
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("h4", { staticStyle: { "text-align": "center" } }, [
+                          _c(
+                            "a",
+                            {
+                              attrs: {
+                                title: "1500 AM",
+                                href:
+                                  "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                              }
+                            },
+                            [
+                              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                                _vm._v("1500 AM")
+                              ])
+                            ]
+                          )
+                        ])
                       ])
                     : _vm._e()
                 ]

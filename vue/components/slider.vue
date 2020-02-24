@@ -209,7 +209,7 @@ export default {
         },
    
         async getProgramacionActualMananera(){
-            let url= '/programacion-estacion-actual/9'
+            let url= '/programacion-estacion-actual/7'
             const res= await axios.get(url)
             this.programacionactualmananera= res.data.programacion
 
