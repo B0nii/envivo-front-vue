@@ -11,21 +11,21 @@
     <div v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()" >
 
     <div  class="slide-img">
-    <a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">
+    <a title="LaMañanera" href="https://www.testdo.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">
         <img :src="programacionactualmananera.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid">
     </a>
     </div>
     <div class="slide-content" >
-    <h3 class="post-title"><a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">La Mañanera</a></h3>
+    <h3 class="post-title"><a title="LaMañanera" href="https://www.testdo.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">La Mañanera</a></h3>
     </div>
     </div>
     </div>
     <div class="slide tie-audio">
-    <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
+    <div v-if="!programacionactual103.programa" class="slide-img"><a title="103.3. FM" href="https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"  class="rounded mx-auto d-block img-fluid"></a>
 
     </div>
-    <div v-else class="slide-img"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
+    <div v-else class="slide-img"><a title="103.3. FM" href="https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div class="slide-content">
