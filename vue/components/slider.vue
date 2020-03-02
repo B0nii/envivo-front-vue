@@ -29,7 +29,7 @@
         <img :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid"></a>
     </div>
     <div class="slide-content">
-    <h3 class="post-title"><a title="103.3. FM" href="https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">103.3 FM</a></h3>
+    <h3 class="post-title"><a title="103.3. FM" href="https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">103.3 FM</a></h3>
     </div>
     </div>
     <div  class="slide tie-audio">
