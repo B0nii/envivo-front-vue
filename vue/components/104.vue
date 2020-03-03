@@ -1,12 +1,11 @@
 <template>
     <div>
-        <h1 class="text-center">{{estacion.name}}</h1>
     <div class="container">
         <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
             <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
         </div>       
         <div v-if="!programacionactual.programa" class="row">
-            <img src="https://www.radioformula.com.mx/wp-content/uploads/2018/08/cover_GF_1200x630.jpg"  class="rounded mx-auto d-block img-fluid">
+            <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"  class="rounded mx-auto d-block img-fluid">
         </div>
         <div  v-else class="row">
             <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
@@ -65,7 +64,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <table class="table">
+                <table style="width:100%" class="table">
                     <thead class="thead-dark">
                     <tr>
                     <th scope="col">Hora</th>
@@ -75,9 +74,9 @@
                     </thead>
                     <tbody>
                     <tr v-for="programacion in programacion" :key="programacion.pivot.id">
-                    <td style="width:100px;">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
-                    <td>{{programacion.name}}</td>
-                    <td>{{programacion.name_driver}}</td>
+                    <td style="width:24%">{{programacion.pivot.time_start | formatime}}-{{programacion.pivot.time_end | formatime}}</td>
+                    <td style="width:38%">{{programacion.name}}</td>
+                    <td style="width:38%">{{programacion.name_driver}}</td>
                     </tr>
                     </tbody>  
 
