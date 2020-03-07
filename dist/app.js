@@ -3241,30 +3241,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3298,7 +3274,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                url = '/programacion-estacion-actual/1';
+                url = '/slider-estacion-actual/1';
                 _context.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3323,7 +3299,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                url = '/programacion-estacion-actual/2';
+                url = '/slider-estacion-actual/2';
                 _context2.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3348,7 +3324,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context3.prev = _context3.next) {
               case 0:
-                url = '/programacion-estacion-actual/3';
+                url = '/slider-estacion-actual/3';
                 _context3.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3374,7 +3350,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context4.prev = _context4.next) {
               case 0:
-                url = '/programacion-estacion-actual/4';
+                url = '/slider-estacion-actual/4';
                 _context4.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3399,7 +3375,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context5.prev = _context5.next) {
               case 0:
-                url = '/programacion-estacion-actual/5';
+                url = '/slider-estacion-actual/5';
                 _context5.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3424,7 +3400,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context6.prev = _context6.next) {
               case 0:
-                url = '/programacion-estacion-actual/6';
+                url = '/slider-estacion-actual/6';
                 _context6.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -3449,7 +3425,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           while (1) {
             switch (_context7.prev = _context7.next) {
               case 0:
-                url = '/programacion-estacion-actual/7';
+                url = '/slider-estacion-actual/9';
                 _context7.next = 3;
                 return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
 
@@ -23924,7 +23900,29 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("sliderdos")], 1)
+  return _c(
+    "div",
+    [
+      _c("sliderdos"),
+      _vm._v(" "),
+      _c("estacion-104"),
+      _vm._v(" "),
+      _c("estacion-103"),
+      _vm._v(" "),
+      _c("estacion-970"),
+      _vm._v(" "),
+      _c("estacion-1470"),
+      _vm._v(" "),
+      _c("estacion-1500"),
+      _vm._v(" "),
+      _c("teleformula"),
+      _vm._v(" "),
+      _c("la-mananera"),
+      _vm._v(" "),
+      _c("horarios-mananera")
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -24004,172 +24002,143 @@ var render = function() {
           ),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactual103.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(2)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "103.3. FM",
-                        href:
-                          "https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactual103.programa.image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "103.3. FM",
+                    href:
+                      "https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: { src: _vm.programacionactual103.image_thumbnail }
+                  })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(2)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "slide tie-audio" }, [
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "104.1 FM",
+                    href:
+                      "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: { src: _vm.programacionactual104.image_thumbnail }
+                  })
+                ]
+              )
+            ]),
             _vm._v(" "),
             _vm._m(3)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactual104.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(4)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "104.1 FM",
-                        href:
-                          "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactual104.programa.image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "Telefórmula",
+                    href:
+                      "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: {
+                      src: _vm.programacionactualTeleformula.image_thumbnail
+                    }
+                  })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(4)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "slide tie-audio" }, [
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "970 AM",
+                    href:
+                      "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: { src: _vm.programacionactual970.image_thumbnail }
+                  })
+                ]
+              )
+            ]),
             _vm._v(" "),
             _vm._m(5)
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactualTeleformula.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(6)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "Telefórmula",
-                        href:
-                          "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactualTeleformula.programa
-                              .image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1470 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: { src: _vm.programacionactual1470.image_thumbnail }
+                  })
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _vm._m(6)
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "slide tie-audio" }, [
+            _c("div", { staticClass: "slide-img" }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1500 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
+                  }
+                },
+                [
+                  _c("img", {
+                    staticClass: "rounded mx-auto d-block img-fluid",
+                    attrs: { src: _vm.programacionactual1500.image_thumbnail }
+                  })
+                ]
+              )
+            ]),
             _vm._v(" "),
             _vm._m(7)
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactual970.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(8)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "970 AM",
-                        href:
-                          "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactual970.programa.image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
-            _vm._v(" "),
-            _vm._m(9)
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactual1470.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(10)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "1470 AM",
-                        href:
-                          "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactual1470.programa.image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
-            _vm._v(" "),
-            _vm._m(11)
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "slide tie-audio" }, [
-            !_vm.programacionactual1500.programa
-              ? _c("div", { staticClass: "slide-img" }, [_vm._m(12)])
-              : _c("div", { staticClass: "slide-img" }, [
-                  _c(
-                    "a",
-                    {
-                      attrs: {
-                        title: "1500 AM",
-                        href:
-                          "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula/"
-                      }
-                    },
-                    [
-                      _c("img", {
-                        staticClass: "rounded mx-auto d-block img-fluid",
-                        attrs: {
-                          src:
-                            _vm.programacionactual1500.programa.image_thumbnail
-                        }
-                      })
-                    ]
-                  )
-                ]),
-            _vm._v(" "),
-            _vm._m(13)
           ])
         ])
       ])
@@ -24209,30 +24178,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "103.3. FM",
-          href:
-            "https://www.testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "slide-content" }, [
       _c("h3", { staticClass: "post-title" }, [
         _c(
@@ -24248,30 +24193,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "104.1 FM",
-          href:
-            "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
   },
   function() {
     var _vm = this
@@ -24297,30 +24218,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "Telefórmula",
-          href:
-            "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "slide-content" }, [
       _c("h3", { staticClass: "post-title" }, [
         _c(
@@ -24336,30 +24233,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "970 AM",
-          href:
-            "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
   },
   function() {
     var _vm = this
@@ -24385,30 +24258,6 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "1470 AM",
-          href:
-            "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c("div", { staticClass: "slide-content" }, [
       _c("h3", { staticClass: "post-title" }, [
         _c(
@@ -24424,30 +24273,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      {
-        attrs: {
-          title: "1500 AM",
-          href:
-            "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
-        }
-      },
-      [
-        _c("img", {
-          staticClass: "rounded mx-auto d-block img-fluid",
-          attrs: {
-            src:
-              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-          }
-        })
-      ]
-    )
   },
   function() {
     var _vm = this
