@@ -24632,8 +24632,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactual103.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -24676,8 +24675,7 @@ var render = function() {
                         ]
                       )
                     ])
-                  ])
-                : _vm._e(),
+                  ]),
               _vm._v(" "),
               !_vm.programacionactual104.programa
                 ? _c("div", [
@@ -24725,8 +24723,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactual104.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -24769,8 +24766,7 @@ var render = function() {
                         ]
                       )
                     ])
-                  ])
-                : _vm._e(),
+                  ]),
               _vm._v(" "),
               !_vm.programacionactualTeleformula.programa
                 ? _c("div", [
@@ -24818,8 +24814,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactualTeleformula.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -24863,8 +24858,7 @@ var render = function() {
                         ]
                       )
                     ])
-                  ])
-                : _vm._e(),
+                  ]),
               _vm._v(" "),
               !_vm.programacionactual970.programa
                 ? _c("div", [
@@ -24912,8 +24906,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactual970.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -24956,8 +24949,7 @@ var render = function() {
                         ]
                       )
                     ])
-                  ])
-                : _vm._e(),
+                  ]),
               _vm._v(" "),
               !_vm.programacionactual1470.programa
                 ? _c("div", [
@@ -25005,8 +24997,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactual1470.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -25050,8 +25041,7 @@ var render = function() {
                         ]
                       )
                     ])
-                  ])
-                : _vm._e(),
+                  ]),
               _vm._v(" "),
               !_vm.programacionactual1500.programa
                 ? _c("div", [
@@ -25099,8 +25089,7 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm.programacionactual1500.programa
-                ? _c("div", [
+                : _c("div", [
                     _c(
                       "a",
                       {
@@ -25145,7 +25134,6 @@ var render = function() {
                       )
                     ])
                   ])
-                : _vm._e()
             ]
           )
         ],
