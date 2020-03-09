@@ -16,7 +16,7 @@
         </a>
        <h4 style="text-align: center;"><a title="103.3 FM" href="https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"><p style="color:#0f4d97">103.3 FM</p></a></h4>
       </div>
-      <div v-else-if="programacionactual103.programa">
+      <div v-else>
         <a title="103.3. FM" href="https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula">
         <img  :src="programacionactual103.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
         </a>
@@ -31,7 +31,7 @@
         <h4 style="text-align: center;"><a title="104.1 FM" href="https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"><p style="color:#0f4d97">104.1 FM</p></a></h4>
 
       </div>
-      <div v-else-if="programacionactual104.programa" >
+      <div v-else>
         <a title="104.1 FM" href="https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula">
         <img  :src="programacionactual104.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;" >
         </a>
@@ -45,7 +45,7 @@
         </a>
         <h4 style="text-align: center;"><a title="Telefórmula" href="https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"><p style="color:#0f4d97">Telefórmula</p></a></h4>
       </div>
-      <div v-else-if="programacionactualTeleformula.programa">
+      <div v-else>
         <a title="Telefórmula" href="https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula">
         <img  :src="programacionactualTeleformula.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
         </a>
@@ -59,7 +59,7 @@
         </a>
         <h4 style="text-align: center;"><a title="970 AM" href="https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"><p style="color:#0f4d97">970 AM</p></a></h4>
       </div>
-      <div v-else-if="programacionactual970.programa">
+      <div v-else>
         <a title="970 AM" href="https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula">
         <img  :src="programacionactual970.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
         </a>
@@ -73,7 +73,7 @@
         </a>
         <h4 style="text-align: center;"><a title="1470 AM" href="https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"><p style="color:#0f4d97">1470 AM</p></a></h4>
       </div>
-      <div v-else-if="programacionactual1470.programa">
+      <div v-else>
         <a title="1470 AM" href="https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/">
         <img  :src="programacionactual1470.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
         </a>
@@ -87,7 +87,7 @@
         </a>
         <h4 style="text-align: center;"><a title="1500 AM" href="https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"><p style="color:#0f4d97">1500 AM</p></a></h4>
       </div>
-      <div v-else-if="programacionactual1500.programa">
+      <div v-else>
         <a title="1500 AM" href="https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula">
         <img  :src="programacionactual1500.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
         </a>
