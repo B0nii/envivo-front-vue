@@ -1,13 +1,13 @@
-const Vue = require('vue');
+const Vue = require( 'vue' );
 Vue.config.productionTip = false
 
 import axios from 'axios'
 
 //axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
-axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-//axios.defaults.baseURL = 'http://localhost:8000/api';
+axios.defaults.baseURL = 'http://localhost:8000/api';
 //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
@@ -23,21 +23,21 @@ import LaMananera from './components/LaMananera'
 import HorariosMananera from './components/HorariosMananera'
 import sliderdos from './components/sliderdos'
 
-Vue.component('hellow', Helow);
-Vue.component('estacion-104', Estacion104);
-Vue.component('estacion-103', Estacion103);
-Vue.component('estacion-970', Estacion970);
-Vue.component('estacion-1470', Estacion1470);
-Vue.component('estacion-1500', Estacion1500);
-Vue.component('teleformula', Teleformula);
-Vue.component('slider', slider);
-Vue.component('la-mananera', LaMananera);
-Vue.component('horarios-mananera', HorariosMananera);
-Vue.component('sliderdos', sliderdos);
+Vue.component( 'hellow', Helow );
+Vue.component( 'estacion-104', Estacion104 );
+Vue.component( 'estacion-103', Estacion103 );
+Vue.component( 'estacion-970', Estacion970 );
+Vue.component( 'estacion-1470', Estacion1470 );
+Vue.component( 'estacion-1500', Estacion1500 );
+Vue.component( 'teleformula', Teleformula );
+Vue.component( 'slider', slider );
+Vue.component( 'la-mananera', LaMananera );
+Vue.component( 'horarios-mananera', HorariosMananera );
+Vue.component( 'sliderdos', sliderdos );
 
-var vm = new Vue({
+var vm = new Vue( {
     el: '#app',
     data: {},
-    created() {},
+    created () { },
     methods: {},
-});
+} );
