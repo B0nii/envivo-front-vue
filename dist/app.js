@@ -24607,7 +24607,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -24699,7 +24700,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -24791,7 +24793,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -24884,7 +24887,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -24976,7 +24980,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -25069,7 +25074,8 @@ var render = function() {
                           },
                           attrs: {
                             src:
-                              "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
+                              _vm.programacionactualmananera.programa
+                                .image_thumbnail
                           }
                         })
                       ]
@@ -37532,9 +37538,9 @@ Vue.config.productionTip = false;
  //axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
 //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'http://localhost:8000/api';
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
