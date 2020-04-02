@@ -2856,6 +2856,339 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var vue_owl_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-owl-carousel */ "./node_modules/vue-owl-carousel/dist/vue-owl-carousel.js");
+/* harmony import */ var vue_owl_carousel__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(vue_owl_carousel__WEBPACK_IMPORTED_MODULE_3__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    carousel: vue_owl_carousel__WEBPACK_IMPORTED_MODULE_3___default.a
+  },
+  data: function data() {
+    var _ref;
+
+    return _ref = {
+      programacionactual103: [],
+      programacionactual104: [],
+      programacionactualTeleformula: [],
+      programacionactual970: []
+    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionActualCoronavirus", []), _ref;
+  },
+  mounted: function mounted() {
+    this.getProgramacionActual103();
+    this.getProgramacionActual104();
+    this.getProgramacionActualTeleformula();
+    this.getProgramacionActual970();
+    this.getProgramacionActual470();
+    this.getProgramacionActual1500();
+    this.getProgramacionActualCoronavirus();
+  },
+  methods: {
+    getProgramacionActual103: function getProgramacionActual103() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                url = '/programacion-estacion-actual/1';
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context.sent;
+                _this.programacionactual103 = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    getProgramacionActual104: function getProgramacionActual104() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                url = '/programacion-estacion-actual/2';
+                _context2.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context2.sent;
+                _this2.programacionactual104 = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
+    },
+    getProgramacionActualTeleformula: function getProgramacionActualTeleformula() {
+      var _this3 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                url = '/programacion-estacion-actual/3';
+                _context3.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context3.sent;
+                _this3.programacionactualTeleformula = res.data.programacion;
+                _this3.loading = true;
+
+              case 6:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }))();
+    },
+    getProgramacionActual970: function getProgramacionActual970() {
+      var _this4 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                url = '/programacion-estacion-actual/4';
+                _context4.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context4.sent;
+                _this4.programacionactual970 = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4);
+      }))();
+    },
+    getProgramacionActual470: function getProgramacionActual470() {
+      var _this5 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                url = '/programacion-estacion-actual/5';
+                _context5.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context5.sent;
+                _this5.programacionactual1470 = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5);
+      }))();
+    },
+    getProgramacionActual1500: function getProgramacionActual1500() {
+      var _this6 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                url = '/programacion-estacion-actual/6';
+                _context6.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context6.sent;
+                _this6.programacionactual1500 = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6);
+      }))();
+    },
+    getProgramacionActualCoronavirus: function getProgramacionActualCoronavirus() {
+      var _this7 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee7() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee7$(_context7) {
+          while (1) {
+            switch (_context7.prev = _context7.next) {
+              case 0:
+                url = '/programacion-estacion-actual/10';
+                _context7.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context7.sent;
+                _this7.programacionActualCoronavirus = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context7.stop();
+            }
+          }
+        }, _callee7);
+      }))();
+    },
+    moment: function moment(date) {
+      return moment__WEBPACK_IMPORTED_MODULE_2___default()().format('HH:mm:ss');
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/HorariosMananera.vue?vue&type=script&lang=js& ***!
@@ -3262,7 +3595,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       programacionactual104: [],
       programacionactualTeleformula: [],
       programacionactual970: []
-    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionactualmananera", []), _ref;
+    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionactualmananera", []), _defineProperty(_ref, "programacionActualCoronavirus", []), _ref;
   },
   mounted: function mounted() {
     this.getProgramacionActual103();
@@ -3272,6 +3605,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.getProgramacionActual470();
     this.getProgramacionActual1500();
     this.getProgramacionActualMananera();
+    this.getProgramacionActualCoronavirus();
   },
   methods: {
     getProgramacionActual103: function getProgramacionActual103() {
@@ -3448,6 +3782,31 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }
           }
         }, _callee7);
+      }))();
+    },
+    getProgramacionActualCoronavirus: function getProgramacionActualCoronavirus() {
+      var _this8 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee8() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee8$(_context8) {
+          while (1) {
+            switch (_context8.prev = _context8.next) {
+              case 0:
+                url = '/programacion-estacion-actual/10';
+                _context8.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context8.sent;
+                _this8.programacionActualCoronavirus = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context8.stop();
+            }
+          }
+        }, _callee8);
       }))();
     },
     moment: function moment(date) {
@@ -3586,6 +3945,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
 
 
 
@@ -3601,7 +3963,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       programacionactual104: [],
       programacionactualTeleformula: [],
       programacionactual970: []
-    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionactualmananera", []), _ref;
+    }, _defineProperty(_ref, "programacionactualTeleformula", []), _defineProperty(_ref, "programacionactual1470", []), _defineProperty(_ref, "programacionactual1500", []), _defineProperty(_ref, "programacionactualmananera", []), _defineProperty(_ref, "programacionActualCoronavirus", []), _ref;
   },
   mounted: function mounted() {
     this.getProgramacionActual103();
@@ -3611,6 +3973,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     this.getProgramacionActual470();
     this.getProgramacionActual1500();
     this.getProgramacionActualMananera();
+    this.getProgramacionActualCoronavirus();
   },
   methods: {
     getProgramacionActual103: function getProgramacionActual103() {
@@ -3787,6 +4150,31 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
             }
           }
         }, _callee7);
+      }))();
+    },
+    getProgramacionActualCoronavirus: function getProgramacionActualCoronavirus() {
+      var _this8 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee8() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee8$(_context8) {
+          while (1) {
+            switch (_context8.prev = _context8.next) {
+              case 0:
+                url = '/programacion-estacion-actual/10';
+                _context8.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context8.sent;
+                _this8.programacionActualCoronavirus = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context8.stop();
+            }
+          }
+        }, _callee8);
       }))();
     },
     moment: function moment(date) {
@@ -23725,6 +24113,614 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "carousel",
+    {
+      attrs: {
+        margin: 8,
+        loop: true,
+        nav: false,
+        responsive: {
+          0: { items: 1, nav: false },
+          600: { items: 3, nav: false }
+        }
+      }
+    },
+    [
+      _c("div", [
+        _c(
+          "a",
+          {
+            attrs: {
+              title: "Coronavirus Minuto a Minuto",
+              href:
+                "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              staticStyle: { width: "330px", height: "auto", margin: "auto" },
+              attrs: {
+                src: _vm.programacionActualCoronavirus.programa.image_thumbnail
+              }
+            })
+          ]
+        ),
+        _vm._v(" "),
+        _c("h4", { staticStyle: { "text-align": "center" } }, [
+          _c(
+            "a",
+            {
+              attrs: {
+                title: "Coronavirus Minuto a Minuto",
+                href:
+                  "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+              }
+            },
+            [
+              _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                _vm._v("Coronavirus minuto a minuto")
+              ])
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      !_vm.programacionactual103.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "103.3. FM",
+                  href:
+                    "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual103.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "103.3 FM",
+                    href:
+                      "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("103.3 FM")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "103.3. FM",
+                  href:
+                    "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual103.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "103.3 FM",
+                    href:
+                      "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("103.3 FM")
+                  ])
+                ]
+              )
+            ])
+          ]),
+      _vm._v(" "),
+      !_vm.programacionactual104.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "104.1 FM",
+                  href:
+                    "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual104.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "104.1 FM",
+                    href:
+                      "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("104.1 FM")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "104.1 FM",
+                  href:
+                    "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual104.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "104.1 FM",
+                    href:
+                      "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("104.1 FM")
+                  ])
+                ]
+              )
+            ])
+          ]),
+      _vm._v(" "),
+      !_vm.programacionactualTeleformula.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "Telefórmula",
+                  href:
+                    "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src:
+                      _vm.programacionactualTeleformula.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "Telefórmula",
+                    href:
+                      "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("Telefórmula")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "Telefórmula",
+                  href:
+                    "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src:
+                      _vm.programacionactualTeleformula.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "Telefórmula",
+                    href:
+                      "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("Telefórmula")
+                  ])
+                ]
+              )
+            ])
+          ]),
+      _vm._v(" "),
+      !_vm.programacionactual970.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "970 AM",
+                  href:
+                    "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual970.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "970 AM",
+                    href:
+                      "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("970 AM")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "970 AM",
+                  href:
+                    "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual970.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "970 AM",
+                    href:
+                      "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("970 AM")
+                  ])
+                ]
+              )
+            ])
+          ]),
+      _vm._v(" "),
+      !_vm.programacionactual1470.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "1470 AM",
+                  href:
+                    "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual1470.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1470 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("1470 AM")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "1470 AM",
+                  href:
+                    "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual1470.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1470 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("1470 AM")
+                  ])
+                ]
+              )
+            ])
+          ]),
+      _vm._v(" "),
+      !_vm.programacionactual1500.programa
+        ? _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "1500 AM",
+                  href:
+                    "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual1500.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1500 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("1500 AM")
+                  ])
+                ]
+              )
+            ])
+          ])
+        : _c("div", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  title: "1500 AM",
+                  href:
+                    "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                }
+              },
+              [
+                _c("img", {
+                  staticClass: "rounded mx-auto d-block img-fluid",
+                  staticStyle: {
+                    width: "330px",
+                    height: "auto",
+                    margin: "auto"
+                  },
+                  attrs: {
+                    src: _vm.programacionactual1500.programa.image_thumbnail
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c("h4", { staticStyle: { "text-align": "center" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    title: "1500 AM",
+                    href:
+                      "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                  }
+                },
+                [
+                  _c("p", { staticStyle: { color: "#0f4d97" } }, [
+                    _vm._v("1500 AM")
+                  ])
+                ]
+              )
+            ])
+          ])
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0&":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/HorariosMananera.vue?vue&type=template&id=93278ca0& ***!
@@ -23974,7 +24970,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -23999,7 +24995,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24017,7 +25013,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24042,7 +25038,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24062,7 +25058,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24087,7 +25083,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24105,7 +25101,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24130,7 +25126,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24150,7 +25146,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -24175,7 +25171,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -24193,7 +25189,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -24219,7 +25215,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://www.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -24239,7 +25235,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24264,7 +25260,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24282,7 +25278,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24307,7 +25303,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24327,7 +25323,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -24352,7 +25348,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -24370,7 +25366,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -24395,7 +25391,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://www.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -24415,7 +25411,7 @@ var render = function() {
                 attrs: {
                   title: "1500 AM",
                   href:
-                    "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24440,7 +25436,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24483,7 +25479,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://www.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25136,6 +26132,9 @@ var render = function() {
         ],
         1
       )
+    : _vm.programacionActualCoronavirus.time_start < _vm.moment() &&
+      _vm.programacionActualCoronavirus.time_end > _vm.moment()
+    ? _c("div", [_c("coronavirus-slider")], 1)
     : _c("div", [_c("slider")], 1)
 }
 var staticRenderFns = []
@@ -37517,16 +38516,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_LaMananera__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/LaMananera */ "./vue/components/LaMananera.vue");
 /* harmony import */ var _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/HorariosMananera */ "./vue/components/HorariosMananera.vue");
 /* harmony import */ var _components_sliderdos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/sliderdos */ "./vue/components/sliderdos.vue");
+/* harmony import */ var _components_CoronavirusSlider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/CoronavirusSlider */ "./vue/components/CoronavirusSlider.vue");
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
-
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
+ //axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
 //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-//axios.defaults.baseURL = 'http://localhost:8000/api';
-//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+
 
 
 
@@ -37550,6 +38551,7 @@ Vue.component('slider', _components_slider__WEBPACK_IMPORTED_MODULE_8__["default
 Vue.component('la-mananera', _components_LaMananera__WEBPACK_IMPORTED_MODULE_9__["default"]);
 Vue.component('horarios-mananera', _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__["default"]);
 Vue.component('sliderdos', _components_sliderdos__WEBPACK_IMPORTED_MODULE_11__["default"]);
+Vue.component('coronavirus-slider', _components_CoronavirusSlider__WEBPACK_IMPORTED_MODULE_12__["default"]);
 var vm = new Vue({
   el: '#app',
   data: {},
@@ -37899,6 +38901,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_970_vue_vue_type_template_id_4be66f10___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_970_vue_vue_type_template_id_4be66f10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./vue/components/CoronavirusSlider.vue":
+/*!**********************************************!*\
+  !*** ./vue/components/CoronavirusSlider.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CoronavirusSlider.vue?vue&type=template&id=2751dd40& */ "./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40&");
+/* harmony import */ var _CoronavirusSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CoronavirusSlider.vue?vue&type=script&lang=js& */ "./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CoronavirusSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "vue/components/CoronavirusSlider.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CoronavirusSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./CoronavirusSlider.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CoronavirusSlider_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40&":
+/*!*****************************************************************************!*\
+  !*** ./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./CoronavirusSlider.vue?vue&type=template&id=2751dd40& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CoronavirusSlider_vue_vue_type_template_id_2751dd40___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

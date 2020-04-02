@@ -1,13 +1,12 @@
 <template>
-  <div  v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()">
-          <carousel :margin="8"  :loop="true" :nav="false" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
+     <carousel :margin="8"  :loop="true" :nav="false" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
       <!-- Inicia Estacion Mañanera -->
-        <div v-if="programacionactualmananera.programa" >
-           <a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">
-          <img  :src="programacionactualmananera.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
+        <div>
+           <a title="Coronavirus Minuto a Minuto" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">
+          <img  :src="programacionActualCoronavirus.programa.image_thumbnail"  class="rounded mx-auto d-block img-fluid" style="width:330px; height:auto;  margin:auto;">
            </a>
-           <h4 style="text-align: center;"><a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"><p style="color:#0f4d97">La Mañanera</p></a></h4>
-         </div>  
+           <h4 style="text-align: center;"><a title="Coronavirus Minuto a Minuto" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"><p style="color:#0f4d97">Coronavirus minuto a minuto</p></a></h4>
+         </div> 
       <!-- Termina Estacion Mañanera -->
       <!-- Inicia Estacion 103 -->
       <div v-if="!programacionactual103.programa">
@@ -95,22 +94,13 @@
       </div>
       <!-- Termina Estacion 1500 -->
 </carousel>
-  </div>
-  <div v-else-if="programacionActualCoronavirus.time_start < moment() && programacionActualCoronavirus.time_end > moment()">
-     <coronavirus-slider/>
-</div>
-<div v-else>
-     <slider></slider>
-</div>
 </template>
-
 <script>
 import axios from 'axios';
 import moment from 'moment';
 import carousel from 'vue-owl-carousel'
 export default {
-        components: { carousel},
-
+components: { carousel},
     data(){
         return{
             programacionactual103:[],
@@ -126,8 +116,6 @@ export default {
             programacionactual1470:[],
             
             programacionactual1500:[],
-
-            programacionactualmananera:[],
 
             programacionActualCoronavirus:[]
     }
@@ -145,8 +133,6 @@ export default {
         this.getProgramacionActual470();
 
         this.getProgramacionActual1500();
-
-        this.getProgramacionActualMananera();
 
         this.getProgramacionActualCoronavirus();
     },
@@ -199,14 +185,6 @@ export default {
 
 
         },
-   
-        async getProgramacionActualMananera(){
-            let url= '/programacion-estacion-actual/9'
-            const res= await axios.get(url)
-            this.programacionactualmananera= res.data.programacion
-
-
-        },
 
         async getProgramacionActualCoronavirus(){
              let url = '/programacion-estacion-actual/10'
@@ -220,4 +198,3 @@ export default {
 } 
 
 </script>
-
