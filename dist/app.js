@@ -2856,6 +2856,119 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/Coronavirus.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/Coronavirus.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      estacion: [],
+      programacionactual: [],
+      loading: true
+    };
+  },
+  methods: {
+    getProgramacion: function getProgramacion() {
+      var _this = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                url = '/programacion-estacion/10';
+                _context.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context.sent;
+                _this.estacion = res.data.estacion;
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }))();
+    },
+    getProgramacionActual: function getProgramacionActual() {
+      var _this2 = this;
+
+      return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+        var url, res;
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                url = '/programacion-estacion-actual/10';
+                _context2.next = 3;
+                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+
+              case 3:
+                res = _context2.sent;
+                _this2.programacionactual = res.data.programacion;
+
+              case 5:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }))();
+    }
+  },
+  mounted: function mounted() {
+    this.getProgramacion();
+    this.getProgramacionActual();
+  },
+  // cortamos la hora  a h:mm co  la function formattime
+  filters: {
+    formatime: function formatime(date) {
+      var hora_format = date.split(":");
+      return hora_format[0] + ':' + hora_format[1];
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/CoronavirusSlider.vue?vue&type=script&lang=js& ***!
@@ -2881,6 +2994,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
 //
 //
 //
@@ -24113,6 +24228,54 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "container" }, [
+      !_vm.programacionactual.programa
+        ? _c("div", { staticClass: "row" }, [
+            _c("img", {
+              staticClass: "rounded mx-auto d-block img-fluid",
+              attrs: {
+                src:
+                  "https://testmarket.radioformula.com.mx/wp-content/uploads/2020/04/coronavirus-minuto-a-minuto_radio-formula_500x340.jpg"
+              }
+            })
+          ])
+        : _c("div", { staticClass: "row" }, [
+            _c("iframe", {
+              attrs: {
+                src: _vm.programacionactual.programa.video,
+                width: "560",
+                height: "315",
+                frameborder: "0",
+                allowfullscreen: "allowfullscreen"
+              }
+            })
+          ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40&":
 /*!***********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./vue/components/CoronavirusSlider.vue?vue&type=template&id=2751dd40& ***!
@@ -24133,12 +24296,10 @@ var render = function() {
     {
       attrs: {
         margin: 8,
+        merge: true,
         loop: true,
         nav: false,
-        responsive: {
-          0: { items: 1, nav: false },
-          600: { items: 3, nav: false }
-        }
+        responsive: { 0: { items: 1 }, 600: { items: 3 } }
       }
     },
     [
@@ -24147,9 +24308,9 @@ var render = function() {
           "a",
           {
             attrs: {
-              title: "Coronavirus Minuto a Minuto",
+              title: "Coronavirus minuto a minuto",
               href:
-                "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                "https://www.radioformula.com.mx/coronavirus-en-tiempo-real/"
             }
           },
           [
@@ -24168,14 +24329,14 @@ var render = function() {
             "a",
             {
               attrs: {
-                title: "Coronavirus Minuto a Minuto",
+                title: "LaMañanera",
                 href:
-                  "https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                  "https://www.radioformula.com.mx/coronavirus-en-tiempo-real/"
               }
             },
             [
               _c("p", { staticStyle: { color: "#0f4d97" } }, [
-                _vm._v("Coronavirus minuto a minuto")
+                _vm._v("Conferencia Coronavirus")
               ])
             ]
           )
@@ -24290,7 +24451,7 @@ var render = function() {
                     margin: "auto"
                   },
                   attrs: {
-                    src: _vm.programacionactual104.programa.image_thumbnail
+                    src: _vm.programacionactual103.programa.image_thumbnail
                   }
                 })
               ]
@@ -24378,8 +24539,7 @@ var render = function() {
                     margin: "auto"
                   },
                   attrs: {
-                    src:
-                      _vm.programacionactualTeleformula.programa.image_thumbnail
+                    src: _vm.programacionactual103.programa.image_thumbnail
                   }
                 })
               ]
@@ -24468,7 +24628,7 @@ var render = function() {
                     margin: "auto"
                   },
                   attrs: {
-                    src: _vm.programacionactual970.programa.image_thumbnail
+                    src: _vm.programacionactual103.programa.image_thumbnail
                   }
                 })
               ]
@@ -24556,7 +24716,7 @@ var render = function() {
                     margin: "auto"
                   },
                   attrs: {
-                    src: _vm.programacionactual1470.programa.image_thumbnail
+                    src: _vm.programacionactual103.programa.image_thumbnail
                   }
                 })
               ]
@@ -24644,7 +24804,7 @@ var render = function() {
                     margin: "auto"
                   },
                   attrs: {
-                    src: _vm.programacionactual1500.programa.image_thumbnail
+                    src: _vm.programacionactual103.programa.image_thumbnail
                   }
                 })
               ]
@@ -24923,7 +25083,7 @@ var render = function() {
       _vm._v(" "),
       _c("la-mananera"),
       _vm._v(" "),
-      _c("horarios-mananera")
+      _c("coronavirus")
     ],
     1
   )
@@ -38517,16 +38677,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/HorariosMananera */ "./vue/components/HorariosMananera.vue");
 /* harmony import */ var _components_sliderdos__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/sliderdos */ "./vue/components/sliderdos.vue");
 /* harmony import */ var _components_CoronavirusSlider__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/CoronavirusSlider */ "./vue/components/CoronavirusSlider.vue");
+/* harmony import */ var _components_Coronavirus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Coronavirus */ "./vue/components/Coronavirus.vue");
 var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 
 Vue.config.productionTip = false;
- //axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
-//axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
+
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
 //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'http://localhost:8000/api'; //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+//axios.defaults.baseURL = 'http://localhost:8000/api';
+//axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+
 
 
 
@@ -38552,6 +38714,7 @@ Vue.component('la-mananera', _components_LaMananera__WEBPACK_IMPORTED_MODULE_9__
 Vue.component('horarios-mananera', _components_HorariosMananera__WEBPACK_IMPORTED_MODULE_10__["default"]);
 Vue.component('sliderdos', _components_sliderdos__WEBPACK_IMPORTED_MODULE_11__["default"]);
 Vue.component('coronavirus-slider', _components_CoronavirusSlider__WEBPACK_IMPORTED_MODULE_12__["default"]);
+Vue.component('coronavirus', _components_Coronavirus__WEBPACK_IMPORTED_MODULE_13__["default"]);
 var vm = new Vue({
   el: '#app',
   data: {},
@@ -38901,6 +39064,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_970_vue_vue_type_template_id_4be66f10___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_970_vue_vue_type_template_id_4be66f10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./vue/components/Coronavirus.vue":
+/*!****************************************!*\
+  !*** ./vue/components/Coronavirus.vue ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Coronavirus.vue?vue&type=template&id=66e449ff& */ "./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff&");
+/* harmony import */ var _Coronavirus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Coronavirus.vue?vue&type=script&lang=js& */ "./vue/components/Coronavirus.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Coronavirus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "vue/components/Coronavirus.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./vue/components/Coronavirus.vue?vue&type=script&lang=js&":
+/*!*****************************************************************!*\
+  !*** ./vue/components/Coronavirus.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Coronavirus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/babel-loader/lib??ref--4-0!../../node_modules/vue-loader/lib??vue-loader-options!./Coronavirus.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/Coronavirus.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Coronavirus_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff&":
+/*!***********************************************************************!*\
+  !*** ./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff& ***!
+  \***********************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../node_modules/vue-loader/lib??vue-loader-options!./Coronavirus.vue?vue&type=template&id=66e449ff& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./vue/components/Coronavirus.vue?vue&type=template&id=66e449ff&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Coronavirus_vue_vue_type_template_id_66e449ff___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

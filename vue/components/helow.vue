@@ -8,7 +8,9 @@
         <estacion-1500/>
         <teleformula/>
         <la-mananera/>
-        <horarios-mananera/>
+        <coronavirus/>
+        <!-- <horarios-mananera/> -->
 
     </div>   
 </template>
+

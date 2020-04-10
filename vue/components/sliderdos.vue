@@ -1,6 +1,6 @@
 <template>
   <div  v-if="programacionactualmananera.time_start < moment() && programacionactualmananera.time_end > moment()">
-          <carousel :margin="8"  :loop="true" :nav="false" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
+      <carousel :margin="8"  :loop="true" :nav="false" :responsive="{0:{items:1,nav:false},600:{items:3,nav:false}}">
       <!-- Inicia Estacion Mañanera -->
         <div v-if="programacionactualmananera.programa" >
            <a title="LaMañanera" href="https://www.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy">

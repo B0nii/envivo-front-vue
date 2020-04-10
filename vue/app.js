@@ -3,11 +3,11 @@ Vue.config.productionTip = false
 
 import axios from 'axios'
 
-//axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
+axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
 //axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
-axios.defaults.baseURL = 'http://localhost:8000/api';
+//axios.defaults.baseURL = 'http://localhost:8000/api';
 //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
@@ -23,6 +23,7 @@ import LaMananera from './components/LaMananera'
 import HorariosMananera from './components/HorariosMananera'
 import sliderdos from './components/sliderdos'
 import CoronavirusSlider from './components/CoronavirusSlider'
+import Coronavirus from './components/Coronavirus'
 
 Vue.component( 'hellow', Helow );
 Vue.component( 'estacion-104', Estacion104 );
@@ -36,6 +37,7 @@ Vue.component( 'la-mananera', LaMananera );
 Vue.component( 'horarios-mananera', HorariosMananera );
 Vue.component( 'sliderdos', sliderdos );
 Vue.component( 'coronavirus-slider',CoronavirusSlider);
+Vue.component( 'coronavirus',Coronavirus)
 
 var vm = new Vue( {
     el: '#app',
