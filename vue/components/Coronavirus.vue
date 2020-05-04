@@ -1,12 +1,14 @@
 <template>
  <div>
-    <div class="container">
-         <div v-if="!programacionactual.programa" class="row">
-             <img src="https://testmarket.radioformula.com.mx/wp-content/uploads/2020/04/coronavirus-minuto-a-minuto_radio-formula_500x340.jpg"  class="rounded mx-auto d-block img-fluid">
-        </div>
-        <div v-else class="row">
+    <div class="container" v-show="programacionactual.programa.video != null" >
+            <div class="widget-title the-global-title">
+            <div style="overflow: hidden">
+            <h4 style="color: #0f4d97; font-size: 18px; float:left">Conferencia de Prensa Coronavirus</h4>
+            </div>
+            </div>
+         <div class="row">
             <iframe :src="programacionactual.programa.video" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-        </div>
+         </div>
    
     </div>
     </div>
