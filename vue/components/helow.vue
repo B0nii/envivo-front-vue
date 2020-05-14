@@ -5,11 +5,12 @@
         <estacion-103/>
         <estacion-970/>
         <estacion-1470/>
+        <envivo1500/>
         <estacion-1500/>
         <teleformula/>
         <la-mananera/>
         <coronavirus/>
-        <!-- <horarios-mananera/> -->
+        <horarios-mananera/>
 
     </div>   
 </template>

@@ -2,7 +2,7 @@
     <div>
     <div class="container">
         <div style="padding: 0px; margin: 0px; text-align: center; background-color: #212121; border: 0px solid red;">
-            <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" :src="estacion.audio" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe>
+            <iframe style="margin: -5px 0 0 -5px; border: 0px solid red; overflow: hidden;" src="https://webinar.tecnoxia.com/hlsplayer/AM1500.html" width="250" height="45" scrolling="no" align="center" allowfullscreen="allowfullscreen"></iframe> -->
         </div> 
          <div v-if="!programacionactual.programa" class="row">
             <img src="https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"  class="rounded mx-auto d-block img-fluid">
@@ -11,19 +11,6 @@
             <img :src="programacionactual.programa.image_full"  class="rounded mx-auto d-block img-fluid">
         </div>  
     </div>
-        <!--<div  class="card text-center">
-            <div class="card-header">
-            Descripción Del Programa
-            </div>
-            <div v-if="!programacionactual.programa"  class="card-body">
-                  <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-            </div>
-            <div v-else  class="card-body">
-                <h5  class="card-title">{{programacionactual.programa.name_driver}} </h5>
-                <p class="card-text">{{programacionactual.programa.description}}</p>
-            </div> 
-        </div>-->
     <div class="container">
         <div class="row"> 
             <div  v-if="!programacionactual.programa" class="col-12">
