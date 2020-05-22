@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div style="width:340px; float: left; border: 0px solid red;">
+        <div style="width:340; float: left; border: 0px solid red;">
         <iframe :src="estacion.video" width="340" height="178" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
         <div style="float:left; border: 0px solid black;">

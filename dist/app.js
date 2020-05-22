@@ -2535,83 +2535,37 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      estacion: [],
-      programacion: [],
-      programacionactual: []
+      estacion: {},
+      programacion: {},
+      programacionAll: []
     };
   },
   mounted: function mounted() {
-    this.getProgramacion();
-    this.getProgramacionActual();
+    this.estacionEnvivo1500();
+    this.programacion1500();
   },
   methods: {
-    getProgramacion: function getProgramacion() {
+    estacionEnvivo1500: function estacionEnvivo1500() {
       var _this = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
-        var url, res;
+        var url;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                url = '/programacion-estacion/6';
-                _context.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+                url = '/programacion-estacion-actual/6';
+                axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url).then(function (res) {
+                  var respuesta = res.data;
+                  _this.estacion = respuesta.estacion;
+                  _this.programacion = respuesta.programacion.programa;
+                });
 
-              case 3:
-                res = _context.sent;
-                _this.programacion = res.data.programacion;
-                _this.estacion = res.data.estacion;
-
-              case 6:
+              case 2:
               case "end":
                 return _context.stop();
             }
@@ -2619,24 +2573,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee);
       }))();
     },
-    getProgramacionActual: function getProgramacionActual() {
+    programacion1500: function programacion1500() {
       var _this2 = this;
 
       return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
-        var url, res;
+        var url;
         return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
           while (1) {
             switch (_context2.prev = _context2.next) {
               case 0:
-                url = '/programacion-estacion-actual/6';
-                _context2.next = 3;
-                return axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url);
+                url = '/programacion-estacion/6';
+                axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(url).then(function (res) {
+                  _this2.programacionAll = res.data.programacion;
+                });
 
-              case 3:
-                res = _context2.sent;
-                _this2.programacionactual = res.data.programacion;
-
-              case 5:
+              case 2:
               case "end":
                 return _context2.stop();
             }
@@ -23497,100 +23448,59 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "container" }, [
-      _vm._m(0),
-      _vm._v(" "),
-      !_vm.programacionactual.programa
-        ? _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: {
-                src:
-                  "https://www.radioformula.com.mx/wp-content/uploads/envivoimg/imagenes/radio-formula_500x340.jpg"
-              }
-            })
-          ])
-        : _c("div", { staticClass: "row" }, [
-            _c("img", {
-              staticClass: "rounded mx-auto d-block img-fluid",
-              attrs: { src: _vm.programacionactual.programa.image_full }
-            })
-          ])
+    _c(
+      "div",
+      { staticStyle: { width: "340", float: "left", border: "0px solid red" } },
+      [
+        _c("iframe", {
+          attrs: {
+            src: _vm.estacion.video,
+            width: "340",
+            height: "178",
+            frameborder: "0",
+            allowfullscreen: "allowfullscreen"
+          }
+        })
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticStyle: { float: "left", border: "0px solid black" } }, [
+      _c("img", {
+        staticClass: "alignnone size-medium",
+        attrs: { src: _vm.programacion.image_full, width: "340", height: "178" }
+      })
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        !_vm.programacionactual.programa
-          ? _c("div", { staticClass: "col-12" }, [
-              _vm._m(1),
-              _vm._v(" "),
-              _vm._m(2)
-            ])
-          : _c("div", { staticClass: "col-12" }, [
-              _c("table", { staticClass: "table" }, [
-                _c("thead", { staticClass: "thead-dark" }, [
-                  _c("tr", [
-                    _c("th", { attrs: { scope: "col" } }, [
-                      _vm._v(
-                        _vm._s(_vm.programacionactual.programa.name) +
-                          " - " +
-                          _vm._s(_vm.programacionactual.programa.name_driver)
-                      )
-                    ])
-                  ])
+    _c("br"),
+    _c("br"),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-10" }, [
+        _c("table", { staticClass: "table", staticStyle: { width: "89%" } }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            _vm._l(_vm.programacionAll, function(programacion) {
+              return _c("tr", { key: programacion.pivot.id }, [
+                _c("td", { staticStyle: { width: "24%" } }, [
+                  _vm._v(
+                    _vm._s(_vm._f("formatime")(programacion.pivot.time_start)) +
+                      "-" +
+                      _vm._s(_vm._f("formatime")(programacion.pivot.time_end))
+                  )
                 ]),
                 _vm._v(" "),
-                _c("tbody", [
-                  _c("tr", [
-                    _c("td", [
-                      _vm._v(
-                        _vm._s(_vm.programacionactual.programa.description)
-                      )
-                    ])
-                  ])
+                _c("td", { staticStyle: { width: "38%" } }, [
+                  _vm._v(_vm._s(programacion.name))
+                ]),
+                _vm._v(" "),
+                _c("td", { staticStyle: { width: "38%" } }, [
+                  _vm._v(_vm._s(programacion.name_driver))
                 ])
               ])
-            ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12" }, [
-          _c(
-            "table",
-            { staticClass: "table", staticStyle: { width: "100%" } },
-            [
-              _vm._m(3),
-              _vm._v(" "),
-              _c(
-                "tbody",
-                _vm._l(_vm.programacion, function(programacion) {
-                  return _c("tr", { key: programacion.pivot.id }, [
-                    _c("td", { staticStyle: { width: "24%" } }, [
-                      _vm._v(
-                        _vm._s(
-                          _vm._f("formatime")(programacion.pivot.time_start)
-                        ) +
-                          "-" +
-                          _vm._s(
-                            _vm._f("formatime")(programacion.pivot.time_end)
-                          )
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticStyle: { width: "38%" } }, [
-                      _vm._v(_vm._s(programacion.name))
-                    ]),
-                    _vm._v(" "),
-                    _c("td", { staticStyle: { width: "38%" } }, [
-                      _vm._v(_vm._s(programacion.name_driver))
-                    ])
-                  ])
-                }),
-                0
-              )
-            ]
+            }),
+            0
           )
         ])
       ])
@@ -23598,60 +23508,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticStyle: {
-          padding: "0px",
-          margin: "0px",
-          "text-align": "center",
-          "background-color": "#212121",
-          border: "0px solid red"
-        }
-      },
-      [
-        _c("iframe", {
-          staticStyle: {
-            margin: "-5px 0 0 -5px",
-            border: "0px solid red",
-            overflow: "hidden"
-          },
-          attrs: {
-            src: "https://webinar.tecnoxia.com/hlsplayer/AM1500.html",
-            width: "250",
-            height: "45",
-            scrolling: "no",
-            align: "center",
-            allowfullscreen: "allowfullscreen"
-          }
-        })
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "mag-box-title the-global-title" }, [
-      _c("h3", [_vm._v("Horarios de Programas")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("table", { staticClass: "table" }, [
-      _c("thead", { staticClass: "thead-dark" }, [
-        _c("tr", [_c("td", { attrs: { scope: "col" } })])
-      ]),
-      _vm._v(" "),
-      _c("tbody", [_c("tr", [_c("td")])])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -23977,7 +23833,7 @@ var render = function() {
             attrs: {
               title: "Coronavirus minuto a minuto",
               href:
-                "https://testdo.radioformula.com.mx/coronavirus-en-tiempo-real/"
+                "https://testwebrf.radioformula.com.mx/coronavirus-en-tiempo-real/"
             }
           },
           [
@@ -23998,7 +23854,7 @@ var render = function() {
               attrs: {
                 title: "LaMañanera",
                 href:
-                  "https://testdo.radioformula.com.mx/coronavirus-en-tiempo-real/"
+                  "https://testwebrf.radioformula.com.mx/coronavirus-en-tiempo-real/"
               }
             },
             [
@@ -24018,7 +23874,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24043,7 +23899,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24061,7 +23917,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24086,7 +23942,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24106,7 +23962,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24131,7 +23987,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24149,7 +24005,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24174,7 +24030,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24194,7 +24050,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -24219,7 +24075,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -24237,7 +24093,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -24263,7 +24119,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -24283,7 +24139,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24308,7 +24164,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24326,7 +24182,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24351,7 +24207,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24371,7 +24227,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -24396,7 +24252,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -24414,7 +24270,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -24439,7 +24295,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -24459,7 +24315,7 @@ var render = function() {
                 attrs: {
                   title: "1500 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24484,7 +24340,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24502,7 +24358,7 @@ var render = function() {
                 attrs: {
                   title: "1500 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24527,7 +24383,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24734,9 +24590,7 @@ var render = function() {
   return _c("div", [
     _c(
       "div",
-      {
-        staticStyle: { width: "340px", float: "left", border: "0px solid red" }
-      },
+      { staticStyle: { width: "340", float: "left", border: "0px solid red" } },
       [
         _c("iframe", {
           attrs: {
@@ -24900,7 +24754,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24925,7 +24779,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24943,7 +24797,7 @@ var render = function() {
                 attrs: {
                   title: "103.3. FM",
                   href:
-                    "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -24968,7 +24822,7 @@ var render = function() {
                   attrs: {
                     title: "103.3 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -24988,7 +24842,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25013,7 +24867,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25031,7 +24885,7 @@ var render = function() {
                 attrs: {
                   title: "104.1 FM",
                   href:
-                    "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25056,7 +24910,7 @@ var render = function() {
                   attrs: {
                     title: "104.1 FM",
                     href:
-                      "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25076,7 +24930,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -25101,7 +24955,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -25119,7 +24973,7 @@ var render = function() {
                 attrs: {
                   title: "Telefórmula",
                   href:
-                    "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                 }
               },
               [
@@ -25145,7 +24999,7 @@ var render = function() {
                   attrs: {
                     title: "Telefórmula",
                     href:
-                      "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                   }
                 },
                 [
@@ -25165,7 +25019,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25190,7 +25044,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25208,7 +25062,7 @@ var render = function() {
                 attrs: {
                   title: "970 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25233,7 +25087,7 @@ var render = function() {
                   attrs: {
                     title: "970 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25253,7 +25107,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -25278,7 +25132,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -25296,7 +25150,7 @@ var render = function() {
                 attrs: {
                   title: "1470 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                    "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                 }
               },
               [
@@ -25321,7 +25175,7 @@ var render = function() {
                   attrs: {
                     title: "1470 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                      "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                   }
                 },
                 [
@@ -25341,7 +25195,7 @@ var render = function() {
                 attrs: {
                   title: "1500 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25366,7 +25220,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25384,7 +25238,7 @@ var render = function() {
                 attrs: {
                   title: "1500 AM",
                   href:
-                    "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                    "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                 }
               },
               [
@@ -25409,7 +25263,7 @@ var render = function() {
                   attrs: {
                     title: "1500 AM",
                     href:
-                      "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                      "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                   }
                 },
                 [
@@ -25472,7 +25326,7 @@ var render = function() {
                         attrs: {
                           title: "LaMañanera",
                           href:
-                            "https://testdo.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                            "https://testwebrf.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
                         }
                       },
                       [
@@ -25499,7 +25353,7 @@ var render = function() {
                           attrs: {
                             title: "LaMañanera",
                             href:
-                              "https://testdo.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
+                              "https://testwebrf.radioformula.com.mx/conferencia-amlo-en-vivo-mananera-hoy"
                           }
                         },
                         [
@@ -25520,7 +25374,7 @@ var render = function() {
                         attrs: {
                           title: "103.3. FM",
                           href:
-                            "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25546,7 +25400,7 @@ var render = function() {
                           attrs: {
                             title: "103.3 FM",
                             href:
-                              "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25564,7 +25418,7 @@ var render = function() {
                         attrs: {
                           title: "103.3. FM",
                           href:
-                            "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25590,7 +25444,7 @@ var render = function() {
                           attrs: {
                             title: "103.3 FM",
                             href:
-                              "https://testdo.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/103-3-fm-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25610,7 +25464,7 @@ var render = function() {
                         attrs: {
                           title: "104.1 FM",
                           href:
-                            "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25636,7 +25490,7 @@ var render = function() {
                           attrs: {
                             title: "104.1 FM",
                             href:
-                              "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25654,7 +25508,7 @@ var render = function() {
                         attrs: {
                           title: "104.1 FM",
                           href:
-                            "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25680,7 +25534,7 @@ var render = function() {
                           attrs: {
                             title: "104.1 FM",
                             href:
-                              "https://testdo.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/104-fm-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25700,7 +25554,7 @@ var render = function() {
                         attrs: {
                           title: "Telefórmula",
                           href:
-                            "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                         }
                       },
                       [
@@ -25727,7 +25581,7 @@ var render = function() {
                           attrs: {
                             title: "Telefórmula",
                             href:
-                              "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                           }
                         },
                         [
@@ -25745,7 +25599,7 @@ var render = function() {
                         attrs: {
                           title: "Telefórmula",
                           href:
-                            "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                         }
                       },
                       [
@@ -25772,7 +25626,7 @@ var render = function() {
                           attrs: {
                             title: "Telefórmula",
                             href:
-                              "https://testdo.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/teleformula-programacion-semanal-tv-en-vivo-grupo-formula"
                           }
                         },
                         [
@@ -25792,7 +25646,7 @@ var render = function() {
                         attrs: {
                           title: "970 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25818,7 +25672,7 @@ var render = function() {
                           attrs: {
                             title: "970 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25836,7 +25690,7 @@ var render = function() {
                         attrs: {
                           title: "970 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -25862,7 +25716,7 @@ var render = function() {
                           attrs: {
                             title: "970 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/970-am-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -25882,7 +25736,7 @@ var render = function() {
                         attrs: {
                           title: "1470 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                            "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                         }
                       },
                       [
@@ -25909,7 +25763,7 @@ var render = function() {
                           attrs: {
                             title: "1470 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                              "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                           }
                         },
                         [
@@ -25927,7 +25781,7 @@ var render = function() {
                         attrs: {
                           title: "1470 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                            "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                         }
                       },
                       [
@@ -25954,7 +25808,7 @@ var render = function() {
                           attrs: {
                             title: "1470 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
+                              "https://testwebrf.radioformula.com.mx/1470-am-programacion-estacion-de-radio-grupo-formula/"
                           }
                         },
                         [
@@ -25974,7 +25828,7 @@ var render = function() {
                         attrs: {
                           title: "1500 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -26001,7 +25855,7 @@ var render = function() {
                           attrs: {
                             title: "1500 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -26019,7 +25873,7 @@ var render = function() {
                         attrs: {
                           title: "1500 AM",
                           href:
-                            "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                            "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                         }
                       },
                       [
@@ -26046,7 +25900,7 @@ var render = function() {
                           attrs: {
                             title: "1500 AM",
                             href:
-                              "https://testdo.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
+                              "https://testwebrf.radioformula.com.mx/1500-am-programacion-estacion-de-radio-grupo-formula"
                           }
                         },
                         [
@@ -38454,9 +38308,9 @@ var Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"
 Vue.config.productionTip = false;
  //axios.defaults.baseURL = 'https://www.radioformula.com.mx/envivo/api';
 //axios.defaults.baseURL = 'https:/ / testdo.radioformula.com.mx / envivo / api ';
-//axios.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api';
 
-axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'http://localhost:8000/api';
+axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.baseURL = 'https://testwebrf.radioformula.com.mx/envivo/api'; //axios.defaults.baseURL = 'https://testdo.radioformula.com.mx/envivo/api';
+//axios.defaults.baseURL = 'http://localhost:8000/api';
 //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
 //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
@@ -39122,15 +38976,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************!*\
   !*** ./vue/components/envivo1500.vue ***!
   \***************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _envivo1500_vue_vue_type_template_id_133587aa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./envivo1500.vue?vue&type=template&id=133587aa& */ "./vue/components/envivo1500.vue?vue&type=template&id=133587aa&");
 /* harmony import */ var _envivo1500_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./envivo1500.vue?vue&type=script&lang=js& */ "./vue/components/envivo1500.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _envivo1500_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _envivo1500_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -39160,7 +39013,7 @@ component.options.__file = "vue/components/envivo1500.vue"
 /*!****************************************************************!*\
   !*** ./vue/components/envivo1500.vue?vue&type=script&lang=js& ***!
   \****************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
